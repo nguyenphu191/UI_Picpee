@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upwork - Successfully Unsubscribed</title>
+    <link rel="stylesheet" href="unsub.css">
+</head>
+<body>
+    
+
+    <div class="main-content">
+        <div class="logo">
+                   
+            <img src="logo.jpg" alt="Picpee logo" class="logo-img" />
+        </div>
+
+        <h1 class="success-title">You have successfully<br>unsubscribed.</h1>
+
+        <p class="description">
+            Chúng tôi rất tiếc khi bạn phải ra đi! Bằng cách hủy đăng ký nhận email tiếp thị,<br>
+            bạn sẽ bỏ lỡ các thông tin cập nhật sản phẩm, ưu đãi và tư vấn từ Picpee qua<br>
+            email.
+        </p>
+        <p class="description">Redirecting to Picpee in <span id="countdown-timer">3</span> seconds...</p>
+
+
+        
+    </div>
+
+    <div class="footer">
+        © 2015 - 2025 Picpee ® Global Inc.
+        <div class="footer-links">
+            <a href="#">Chính sách</a>
+            <a href="#">bảo mật</a>
+        </div>
+    </div>
+    <script>
+        let timeLeft = 3;
+        const countdownElement = document.getElementById('countdown-timer');
+        
+        const countdown = setInterval(() => {
+            timeLeft--;
+            countdownElement.textContent = timeLeft;
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                window.location.href = 'https://picpee.net/';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

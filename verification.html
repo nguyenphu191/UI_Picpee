@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verified - Picpee</title>
+    <link rel="stylesheet" href="verification.css">
+</head>
+<body>
+    <div class="container">
+        <main class="main-content">
+            <div class="verification-container">
+                <h1 class="verification-title">Your email is verified!</h1>
+                <p class="verification-subtitle">You can close this tab and return to Picpee.</p>
+                <p class="countdown">Redirecting to Picpee in <span id="countdown-timer">3</span> seconds...</p>
+            </div>
+        </main>
+
+        <aside class="branding">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="logo.jpg" alt="Picpee logo" class="logo-img" />
+                </div>
+                <p class="tagline">The Power Behind <br>Top Real Estate Media<br>Brands.</p>
+            </div>
+        </aside>
+    </div>
+
+    <script>
+        let timeLeft = 3;
+        const countdownElement = document.getElementById('countdown-timer');
+        
+        const countdown = setInterval(() => {
+            timeLeft--;
+            countdownElement.textContent = timeLeft;
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                window.location.href = 'https://picpee.net/';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
