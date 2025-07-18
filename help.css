@@ -21,13 +21,19 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
     line-height: 1.6;
-    color: var(--text-dark);
-    background-color: var(--bg-light);
+    color: #333;
+    background-color: #fafafa;
 }
 
-/* Header */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* Header Styles */
 .header {
     background: white;
     border-bottom: 1px solid var(--border-gray);
@@ -43,8 +49,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 var(--spacing-md);
-    max-width: var(--container-width);
-    margin: 0 auto;
 }
 
 .logo-img {
@@ -71,7 +75,6 @@ body {
     color: var(--text-dark);
 }
 
-
 .cta-button {
     background: var(--text-dark);
     color: white;
@@ -89,18 +92,20 @@ body {
     transform: translateY(-1px);
 }
 
-/* Container */
-.container {
-    max-width: var(--container-width);
-    margin: 0 auto;
-    padding: var(--spacing-lg) var(--spacing-md);
-    display: grid;
-    grid-template-columns: var(--sidebar-width) 1fr;
-    gap: var(--spacing-lg);
+/* Main Layout */
+.main-wrapper {
+    background: white;
     min-height: calc(100vh - 80px);
 }
 
-/* Sidebar */
+.content-layout {
+    display: grid;
+    grid-template-columns: var(--sidebar-width) 1fr;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg) 0;
+}
+
+/* Sidebar Styles */
 .sidebar {
     background: var(--bg-light);
     border-radius: 12px;
@@ -153,14 +158,21 @@ body {
 
 .sidebar-link {
     display: block;
-    padding: var(--spacing-sm) var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-md) var(--spacing-sm) 1.5rem;
     text-decoration: none;
     color: var(--text-gray);
     font-size: var(--font-size-base);
     font-weight: 500;
     transition: all 0.2s ease;
     border-left: 3px solid transparent;
-    margin: 2px 0;
+    position: relative;
+}
+
+.sidebar-link:hover {
+    color: var(--primary-dark);
+    background: rgba(34, 197, 94, 0.1);
+    border-left-color: var(--primary-color);
+    text-decoration: none;
 }
 
 .sidebar-link.active {
@@ -170,48 +182,68 @@ body {
     font-weight: 600;
 }
 
-/* Main Content */
-.main-content {
-    background: white;
-    padding: var(--spacing-lg);
-    border-radius: 12px;
-    border: 1px solid var(--border-gray);
+/* Content Styles */
+.content {
+    max-width: 800px;
+    padding: 0 var(--spacing-md);
 }
 
 .content-header {
     margin-bottom: var(--spacing-lg);
-    padding-bottom: var(--spacing-md);
-    border-bottom: 2px solid var(--border-gray);
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--bg-light);
 }
 
 .content-header h1 {
     font-size: var(--font-size-heading);
     font-weight: 700;
     color: var(--text-dark);
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
 }
 
-.content-header p {
+.welcome {
     font-size: clamp(1rem, 2.5vw, 1.125rem);
-    color: var(--text-gray);
+    color: var(--text-dark);
+    font-weight: 600;
 }
 
-/* FAQ Sections */
-.faq-section {
+/* Section Styles */
+.section {
     margin-bottom: 3rem;
 }
 
-.faq-section:last-child {
-    margin-bottom: 0;
+.section h2 {
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: var(--spacing-sm);
 }
 
-.faq-section h2 {
-    font-size: clamp(1.25rem, 3vw, 1.75rem);
+.section h3 {
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
     font-weight: 600;
-    color: var(--text-dark);
+    color: #334155;
+    margin: 1.5rem 0 var(--spacing-md) 0;
+}
+
+.section p {
     margin-bottom: var(--spacing-md);
-    padding-bottom: var(--spacing-sm);
-    border-bottom: 2px solid var(--primary-color);
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+    color: #374151;
+}
+
+.section ul, .section ol {
+    margin: var(--spacing-md) 0;
+    padding-left: 1.5rem;
+}
+
+.section li {
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.6;
+    color: #374151;
 }
 
 /* FAQ Items */
@@ -303,7 +335,7 @@ body {
     line-height: 1.6;
 }
 
-.faq-content h4 {
+.faq-content h3 {
     font-size: clamp(0.9rem, 2vw, 1rem);
     font-weight: 600;
     color: var(--text-dark);
@@ -317,26 +349,26 @@ body {
     font-weight: 600;
 }
 
-/* Important Notes */
-.important-note {
-    background: #fef3c7;
+/* Note Box */
+.note-box {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
     border: 1px solid #f59e0b;
-    border-radius: 6px;
+    border-radius: 12px;
     padding: var(--spacing-md);
-    margin: var(--spacing-md) 0;
+    margin: 1.5rem 0;
 }
 
-.important-note p {
-    margin-bottom: var(--spacing-sm);
-    color: #92400e;
+.note-box p {
+    margin: 0;
     font-weight: 600;
+    color: #92400e;
 }
 
-.important-note ul {
+.note-box ul {
     margin-top: var(--spacing-sm);
 }
 
-.important-note li {
+.note-box li {
     color: #92400e;
 }
 
@@ -421,7 +453,7 @@ body {
     max-width: 280px;
 }
 
-/* Floating Button and Menu - Updated to match term.css style */
+/* Floating Menu Styles */
 .floating-menu-container {
     position: fixed;
     top: 120px;
@@ -439,7 +471,7 @@ body {
     pointer-events: all;
 }
 
-.float-button {
+.floating-menu-button {
     width: 56px;
     height: 56px;
     background: linear-gradient(135deg, #22c55e 0%, #15803d 100%);
@@ -455,16 +487,16 @@ body {
     overflow: hidden;
 }
 
-.float-button:hover {
+.floating-menu-button:hover {
     transform: scale(1.1);
     box-shadow: 0 12px 32px rgba(34, 197, 94, 0.4);
 }
 
-.float-button:active {
+.floating-menu-button:active {
     transform: scale(0.95);
 }
 
-.float-button::before {
+.floating-menu-button::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -477,47 +509,43 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.float-button:hover::before {
+.floating-menu-button:hover::before {
     width: 100%;
     height: 100%;
 }
 
-.hamburger-icon {
+.menu-icon {
     width: 24px;
     height: 24px;
     position: relative;
     z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
-.hamburger-icon span {
+.menu-icon span {
     display: block;
     width: 20px;
     height: 2px;
     background: white;
     border-radius: 1px;
-    margin: 2px 0;
+    margin: 4px auto;
     transition: all 0.3s ease;
     transform-origin: center;
 }
 
-.float-button.active .hamburger-icon span:nth-child(1) {
+.floating-menu-button.active .menu-icon span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
 
-.float-button.active .hamburger-icon span:nth-child(2) {
+.floating-menu-button.active .menu-icon span:nth-child(2) {
     opacity: 0;
     transform: scale(0);
 }
 
-.float-button.active .hamburger-icon span:nth-child(3) {
+.floating-menu-button.active .menu-icon span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -6px);
 }
 
-.float-menu {
+.floating-menu-dropdown {
     position: absolute;
     top: 70px;
     right: 0;
@@ -534,36 +562,36 @@ body {
     overflow-y: auto;
 }
 
-.float-menu.show {
+.floating-menu-dropdown.show {
     opacity: 1;
     visibility: visible;
     transform: translateY(0) scale(1);
 }
 
-.float-menu-header {
+.floating-menu-header {
     padding: 20px 20px 10px;
     border-bottom: 1px solid #f1f5f9;
 }
 
-.float-menu-title {
+.floating-menu-title {
     font-size: 16px;
     font-weight: 700;
     color: #1e293b;
     margin-bottom: 5px;
 }
 
-.float-menu-subtitle {
+.floating-menu-subtitle {
     font-size: 12px;
     color: #64748b;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
-.float-menu-nav {
+.floating-menu-nav {
     padding: 10px 0;
 }
 
-.float-menu-link {
+.floating-menu-link {
     display: block;
     padding: 12px 20px;
     text-decoration: none;
@@ -575,58 +603,50 @@ body {
     position: relative;
 }
 
-.float-menu-link:hover {
+.floating-menu-link:hover {
     color: #15803d;
     background: rgba(34, 197, 94, 0.05);
     border-left-color: #22c55e;
     text-decoration: none;
 }
 
-.float-menu-link.active {
+.floating-menu-link.active {
     color: #22c55e;
     background: rgba(34, 197, 94, 0.1);
     border-left-color: #22c55e;
     font-weight: 600;
 }
 
-/* Scrollbar */
-.sidebar::-webkit-scrollbar,
-.float-menu::-webkit-scrollbar {
+/* Scrollbar Styles */
+.sidebar, .floating-menu-dropdown {
+    scrollbar-width: thin;
+    scrollbar-color: #c1c1c1 #f1f1f1;
+}
+
+.sidebar::-webkit-scrollbar, .floating-menu-dropdown::-webkit-scrollbar {
     width: 6px;
 }
 
-.sidebar::-webkit-scrollbar-track,
-.float-menu::-webkit-scrollbar-track {
+.sidebar::-webkit-scrollbar-track, .floating-menu-dropdown::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 3px;
 }
 
-.sidebar::-webkit-scrollbar-thumb,
-.float-menu::-webkit-scrollbar-thumb {
+.sidebar::-webkit-scrollbar-thumb, .floating-menu-dropdown::-webkit-scrollbar-thumb {
     background: #c1c1c1;
     border-radius: 3px;
 }
 
-.sidebar::-webkit-scrollbar-thumb:hover,
-.float-menu::-webkit-scrollbar-thumb:hover {
+.sidebar::-webkit-scrollbar-thumb:hover, .floating-menu-dropdown::-webkit-scrollbar-thumb:hover {
     background: #a8a8a8;
 }
 
-/* Animations */
-.faq-item.expanded {
-    border-color: var(--primary-color);
-}
-
-.faq-item.expanded .faq-title {
-    background: #eff6ff;
-    color: var(--primary-dark);
-}
-
-.float-menu-link {
+/* Animation for Floating Menu */
+.floating-menu-link {
     animation-delay: var(--delay, 0ms);
 }
 
-.float-menu.show .float-menu-link {
+.floating-menu-dropdown.show .floating-menu-link {
     animation: slideInFromRight 0.3s ease forwards;
 }
 
@@ -635,25 +655,20 @@ body {
     to { opacity: 1; transform: translateX(0); }
 }
 
-@keyframes expandContent {
-    from { max-height: 0; opacity: 0; }
-    to { max-height: fit-content; opacity: 1; }
-}
-
 /* Accessibility */
 .sidebar-link:focus-visible,
 .nav-link:focus-visible,
 .cta-button:focus-visible,
 .faq-title:focus-visible,
-.float-button:focus-visible,
-.float-menu-link:focus-visible {
+.floating-menu-button:focus-visible,
+.floating-menu-link:focus-visible {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .container {
+    .content-layout {
         grid-template-columns: 250px 1fr;
         gap: 1.5rem;
     }
@@ -673,10 +688,10 @@ body {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .container {
+    .content-layout {
         grid-template-columns: 1fr;
         gap: var(--spacing-md);
-        padding: var(--spacing-sm);
+        padding: var(--spacing-sm) 0;
     }
     .sidebar {
         position: relative;
@@ -695,9 +710,9 @@ body {
     .sidebar-nav.show {
         display: flex;
     }
-    .main-content {
+    .content {
         order: 2;
-        padding: var(--spacing-md);
+        padding: 0 var(--spacing-sm);
     }
     .content-header {
         margin-bottom: 1.5rem;
@@ -706,9 +721,6 @@ body {
     .faq-title {
         padding: var(--spacing-sm) var(--spacing-md);
         font-size: clamp(0.9rem, 2.5vw, 1rem);
-    }
-    .faq-content {
-        padding: 0 var(--spacing-sm);
     }
     .faq-item.expanded .faq-content {
         padding: var(--spacing-sm);
@@ -721,7 +733,7 @@ body {
         bottom: 15px;
         right: 15px;
     }
-    .float-menu {
+    .floating-menu-dropdown {
         top: auto;
         bottom: 70px;
         min-width: 280px;
@@ -731,7 +743,7 @@ body {
 
 @media (max-width: 480px) {
     .container {
-        padding: var(--spacing-sm);
+        padding: 0 var(--spacing-sm);
     }
     .logo-img {
         height: 40px;
@@ -750,23 +762,17 @@ body {
         padding: 0.375rem var(--spacing-sm);
         font-size: 0.875rem;
     }
-    .main-content {
-        padding: var(--spacing-sm);
-    }
-    .content-header h1 {
-        font-size: clamp(1.25rem, 3vw, 1.5rem);
-    }
-    .faq-section h2 {
+    .section h2 {
         font-size: clamp(1.125rem, 2.5vw, 1.25rem);
     }
     .step-image {
         max-width: 100%;
     }
-    .float-button {
+    .floating-menu-button {
         width: 48px;
         height: 48px;
     }
-    .float-menu {
+    .floating-menu-dropdown {
         min-width: 240px;
     }
 }
@@ -781,11 +787,11 @@ body {
     .faq-content p, .faq-content li {
         font-size: 0.875rem;
     }
-    .float-button {
+    .floating-menu-button {
         width: 44px;
         height: 44px;
     }
-    .float-menu {
+    .floating-menu-dropdown {
         min-width: 200px;
     }
 }
@@ -795,14 +801,14 @@ body {
     .header, .sidebar, .floating-menu-container {
         display: none;
     }
-    .container {
+    .content-layout {
         grid-template-columns: 1fr;
     }
-    .main-content {
+    .content {
         max-width: none;
         padding: 0;
     }
-    .faq-section {
+    .section {
         page-break-inside: avoid;
     }
 }

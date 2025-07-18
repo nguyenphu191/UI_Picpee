@@ -9,584 +9,579 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" role="banner">
         <div class="container-header">
             <div class="logo">
                 <img src="logo.jpg" alt="Picpee logo" class="logo-img" />
             </div>
             <nav class="nav">
                 <a href="https://picpee.net/services" class="nav-link">All Services</a>
-                <a href="https://picpee.net/faq" class="nav-link">How it work</a>
+                <a href="https://picpee.net/faq" class="nav-link">How it works</a>
                 <a href="https://picpee.net/contact" class="nav-link">Contact</a>
                 <a href="https://picpee.net/">
                     <button class="cta-button">Find an Editor</button>
-                  </a>
+                </a>
             </nav>
         </div>
     </header>
     
-    <!-- Floating Button and Menu -->
-    <div class="floating-menu-container" id="floatingMenu">
-        <button class="float-button" id="floatingMenuButton" aria-expanded="false" aria-controls="float-menu">
-            <div class="hamburger-icon">
+    <!-- Floating Menu -->
+    <div class="floating-menu-container" id="floatingMenu" role="navigation" aria-label="Quick navigation">
+        <button class="floating-menu-button" id="floatingMenuButton" aria-expanded="false" aria-controls="floatingMenuDropdown">
+            <div class="menu-icon">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </button>
-        <nav class="float-menu" id="float-menu">
-            <div class="float-menu-header">
-                <div class="float-menu-title">Quick Navigation</div>
-                <div class="float-menu-subtitle">Help Center</div>
+        <div class="floating-menu-dropdown" id="floatingMenuDropdown">
+            <div class="floating-menu-header">
+                <div class="floating-menu-title">Quick Navigation</div>
+                <div class="floating-menu-subtitle">Help Center</div>
             </div>
-            <div class="float-menu-nav">
-                <a href="#vendor-faqs" class="float-menu-link" data-section="vendor-faqs">Vendor FAQs</a>
-                <a href="#customer-faqs" class="float-menu-link" data-section="customer-faqs">Customer FAQs</a>
-                <a href="#general-faqs" class="float-menu-link" data-section="general-faqs">General FAQs</a>
-            </div>
-        </nav>
+            <nav class="floating-menu-nav">
+                <a href="#vendor-faqs" class="floating-menu-link">Vendor FAQs</a>
+                <a href="#customer-faqs" class="floating-menu-link">Customer FAQs</a>
+                <a href="#general-faqs" class="floating-menu-link">General FAQs</a>
+            </nav>
+        </div>
     </div>
     
-    <div class="container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <button class="sidebar-toggle" aria-expanded="false" aria-controls="sidebar-nav">Quick Links</button>
-            <nav class="sidebar-nav" id="sidebar-nav">
-                <a href="#vendor-faqs" class="sidebar-link active" data-section="vendor-faqs">Vendor FAQs</a>
-                <a href="#customer-faqs" class="sidebar-link" data-section="customer-faqs">Customer FAQs</a>
-                <a href="#general-faqs" class="sidebar-link" data-section="general-faqs">General FAQs</a>
-            </nav>
-        </aside>
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <div class="container">
+            <div class="content-layout">
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <button class="sidebar-toggle" aria-expanded="false" aria-controls="sidebar-nav">Quick Links</button>
+                    <nav class="sidebar-nav" id="sidebar-nav">
+                        <a href="#vendor-faqs" class="sidebar-link active">Vendor FAQs</a>
+                        <a href="#customer-faqs" class="sidebar-link">Customer FAQs</a>
+                        <a href="#general-faqs" class="sidebar-link">General FAQs</a>
+                    </nav>
+                </aside>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <div class="content-header">
-                <h1>Help Center</h1>
-                <p>Find answers to common questions about using Picpee</p>
-            </div>
-
-            <!-- Vendor FAQs Section -->
-            <section id="vendor-faqs" class="faq-section">
-                <h2>Vendor FAQs</h2>
-                
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq1">How do I get more editing work through Picpee?</button>
-                    <div class="faq-content" id="faq1">
-                        <p>Here's a few recommendations on how to make your profile stand out to photographers shopping for your services:</p>
-                        <ul>
-                            <li>Add a profile photo to your Picpee profile. Make sure your profile photo is friendly and engaging. The best examples are either your logo or your headshot.</li>
-                            <li>Add images to your portfolio for each service you offer.</li>
-                            <li>Upload unique images for each service you offer instead of using one image.</li>
-                            <li>Remove graphics from your gallery. Images in the gallery should not include any logos, designs, or graphics - only finished, edited photos.</li>
-                            <li>Offer a discount to the 1st 5 photographers who use your services.</li>
-                            <li>Share the link to your Picpee profile with photographers who are looking for editors on social media.</li>
-                        </ul>
-                        <p><strong>It's important to note that Picpee does not provide any editing work directly to editors.</strong></p>
+                <!-- Main Content Area -->
+                <main class="content">
+                    <div class="content-header">
+                        <h1>Help Center</h1>
+                        <p class="welcome">Find answers to common questions about using Picpee</p>
                     </div>
-                </div>
 
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq2">How do I get paid when I complete a client project?</button>
-                    <div class="faq-content" id="faq2">
-                        <p>One of the benefits you get as a vendor on Picpee is access to receive payments via e-wallet!</p>
-                        <p>Follow the steps below to get set up to receive payments in Picpee:</p>
-                        <ol>
-                            <li>Create your vendor account on the website.</li>
-                            <li>Set your prices, add images to your portfolio, and complete the verification process.</li>
-                            <li>Once your verification tests have been graded, you'll receive an email notifying you of the results of your test.</li>
-                            <li>When you're approved to offer your services on Picpee, you'll see an option in your Picpee profile to connect to your wallet.</li>
-                            <li>Click the option in Step 3 of your profile set up and follow the steps to connect to your wallet.</li>
-                            <li>Enter your banking information where you'd like to receive payments.</li>
-                        </ol>
-                        <p>Payments for completed orders will not be automatically deposited into your bank account. Once the payment has posted to your Picpee account, you'll need to request a payout from your profile. (Click "Pay out funds" from the left navigation panel of your Picpee account.) This will initiate the payout to your bank account, which can take anywhere from 3-14 business days to reach your account depending on your bank's processing times.</p>
-                        <div class="important-note">
-                            <p><strong>Important Notes:</strong></p>
-                            <ul>
-                                <li>The country you list on your Picpee profile must match the country of your bank account. If you selected the wrong country when creating your profile, send us an email at picpee.com@gmail.com and we'll change the country for you.</li>
-                                <li>Picpee only provides payments through e-wallet and we do not work with any other platforms.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq3">What if I can't meet the deadline?</button>
-                    <div class="faq-content" id="faq3">
-                        <p>Don't miss a deadline. Message the client as soon as you can. If the client accepts the new deadline, you can move forward with completing the work. If not, the work may be disputed, the money may be refunded to the client, and you can't take payment right away if you still choose to complete the work.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq4">How can I offer my services on Picpee?</button>
-                    <div class="faq-content" id="faq4">
-                        <ol>
-                            <li><strong>Create a Picpee provider profile on the site</strong></li>
-                        </ol>
-                        <img src="images/1.jpg" alt="Create Picpee provider profile interface" class="step-image">
-                        <ol start="2">
-                            <li><strong>Set prices and processing times for the services you want to offer.</strong></li>
-                        </ol>
-                        <img src="images/2.jpg" alt="Price and time setting interface" class="step-image">
-                        <ol start="3">
-                            <li><strong>Upload examples to your portfolio for each of those services.</strong></li>
-                        </ol>
-                        <img src="images/3.jpg" alt="Portfolio upload interface" class="step-image">
-                        <ol start="4">
-                            <li><strong>Click "Get Verified" confirmation. Complete the quiz provided by Picpee.</strong></li>
-                        </ol>
-                        <img src="images/4.jpg" alt="Get Verified button" class="step-image">
-                        <ol start="5">
-                            <li><strong>Connect your wallet.</strong></li>
-                        </ol>
-                        <img src="images/5.jpg" alt="Wallet connection interface" class="step-image">
-                        <ol start="6">
-                            <li><strong>Enable your ability to receive orders!</strong></li>
-                        </ol>
-                        <img src="images/6.jpg" alt="Enable orders toggle" class="step-image">
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq5">How do I promote my profile on Picpee?</button>
-                    <div class="faq-content" id="faq5">
-                        <p>Here's a few ideas we recommend:</p>
-                        <ol>
-                            <li><strong>Choose the best examples of your work for your portfolio.</strong>
+                    <!-- Vendor FAQs Section -->
+                    <section id="vendor-faqs" class="section">
+                        <h2>Vendor FAQs</h2>
+                        
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq1">How do I get more editing work through Picpee?</button>
+                            <div class="faq-content" id="faq1">
+                                <p>Here's a few recommendations on how to make your profile stand out to photographers shopping for your services:</p>
                                 <ul>
-                                    <li>Avoid using the test images you were provided during the verification process.</li>
-                                    <li>Select images that are interesting and showcase your skills.</li>
-                                    <li>Include before and after photos to show off your work.</li>
+                                    <li>Add a profile photo to your Picpee profile. Make sure your profile photo is friendly and engaging. The best examples are either your logo or your headshot.</li>
+                                    <li>Add images to your portfolio for each service you offer.</li>
+                                    <li>Upload unique images for each service you offer instead of using one image.</li>
+                                    <li>Remove graphics from your gallery. Images in the gallery should not include any logos, designs, or graphics - only finished, edited photos.</li>
+                                    <li>Offer a discount to the 1st 5 photographers who use your services.</li>
+                                    <li>Share the link to your Picpee profile with photographers who are looking for editors on social media.</li>
                                 </ul>
-                            </li>
-                            <li>Add a profile picture, like a headshot or your business logo.</li>
-                            <li>Keep your profile updated.</li>
-                            <li>Review your pricing to be competitive with other editors on the marketplace.</li>
-                            <li>Offer a discount to the 1st 5 customers who use your services. (You can enable this setting from your Picpee profile.)</li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq6">How do I become a recommended vendor?</button>
-                    <div class="faq-content" id="faq6">
-                        <p>Based on the following criteria:</p>
-                        <ul>
-                            <li>Received many positive customer reviews.</li>
-                            <li>Provided most or all of the services available on Picpee.</li>
-                            <li>Provided a track record of clear and consistent communication, on-time delivery, and excellent customer service.</li>
-                            <li>Received very few disputes or complaints.</li>
-                            <li>Provided adheres to Picpee's policies outlined in the Terms of Service and complies with the requirements for an approved vendor profile.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq7">How much does it cost to become a Picpee vendor?</button>
-                    <div class="faq-content" id="faq7">
-                        <p>It is free for editors to sign up for an account and the service is free. However, Picpee will deduct 20% of the order value and you will receive 80% of the money back. Because Picpee is an intermediary between freelance editors and clients.</p>
-                        <p>Clients will pay in advance for each order and Picpee will hold the payment until the client approves the final revision. At that time, Picpee transfers the amount to the supplier's account, where they can transfer it to bank accounts.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq8">How do I verify a new service on Picpee?</button>
-                    <div class="faq-content" id="faq8">
-                        <p>This guide provides step-by-step details for you to complete the editor services on Picpee.</p>
-                        <p><strong>1. Log in to your editor account or create an account if you do not have a Picpee account.</strong></p>
-                        <img src="images/7.jpg" alt="Login interface" class="step-image">
-                        <p><strong>2. Select the service you want to register for. Fill in all the fields such as price, number of photos in a certain period of time, and upload your product</strong></p>
-                        <img src="images/8.jpg" alt="Service registration form" class="step-image">
-                        <p><strong>3. Click save information</strong></p>
-                        <img src="images/9.jpg" alt="Save information button" class="step-image">
-                        <p><strong>4. Move your mouse to "Get Verified" and click verify</strong></p>
-                        <img src="images/4.jpg" alt="Get Verified button" class="step-image">
-                        <p><strong>5. After clicking, you will receive a test from the system in the order section. You need to complete the test.</strong></p>
-                        <img src="images/10.jpg" alt="Verification test interface" class="step-image">
-                        <p><strong>6. After completing, you click complete and ship. The system will review your skills.</strong></p>
-                        <p><strong>7. Repeat this process for each service you register.</strong></p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq9">How to get more editing jobs on Picpee?</button>
-                    <div class="faq-content" id="faq9">
-                        <p>We want you to reach your full potential and get the jobs you want. Here are some simple yet effective ways to make your profile stand out and attract photographers looking for photo editing services:</p>
-                        <h4>1. Invest in your profile</h4>
-                        <ul>
-                            <li><strong>Professional profile photo:</strong> Use a clear, friendly headshot or your personal logo if you're a studio.</li>
-                            <li><strong>Short, clear bio:</strong> Describe your editing style, experience, and strengths. Avoid being too wordy, focus on what makes you different.</li>
-                        </ul>
-                        <h4>2. Build a quality portfolio</h4>
-                        <ul>
-                            <li><strong>Post a variety of work you've done:</strong> For each service you sign up for, post a variety of work you've done so clients can evaluate your experience.</li>
-                            <li><strong>No generic photos:</strong> Don't use real estate photos from the web or skill test photos provided by Picpee.</li>
-                            <li><strong>No logos or graphics:</strong> Picpee requires clean gallery images with no watermarks or logos.</li>
-                        </ul>
-                        <h4>3. Create an initial offer</h4>
-                        <ul>
-                            <li><strong>Offer a discount for the first 5 customers:</strong> This is a quick way to get your first orders and start getting reviews. You can activate this offer in the "Promotions" section.</li>
-                        </ul>
-                        <h4>4. Share your profile</h4>
-                        <ul>
-                            <li><strong>Post your profile to community groups:</strong> Share your Picpee profile link to Facebook groups, photography forums, or your personal page.</li>
-                            <li><strong>Be proactive:</strong> If you know a photographer who needs their photos edited, don't be afraid to send them your Picpee profile.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq10">Dispute steps for suppliers on Picpee</button>
-                    <div class="faq-content" id="faq10">
-                        <p>Before you start disputing an order, you should try to resolve the issue directly with the customer. Send a message in the order to clearly and politely discuss the difficulty you are experiencing.</p>
-                        <h4>Steps to file a dispute</h4>
-                        <p><strong>1. Access your order. Click the "Actions" button in the upper right corner of the screen.</strong></p>
-                        <img src="images/11.jpg" alt="Actions button in order interface" class="step-image">
-                        <p><strong>2. When the menu appears, select "Submit a dispute". A message will appear, read it carefully and agree to continue the process.</strong></p>
-                        <p><strong>3. Select the appropriate dispute reason:</strong></p>
-                        <p>You will see several options, for example:</p>
-                        <ul>
-                            <li><strong>Customer assets Unable to Access:</strong> The customer did not provide sufficient access or data to complete the order.</li>
-                            <li><strong>Customer requests Beyond Agreement:</strong> There is a request that goes beyond the scope of service or the initial cost agreed upon.</li>
-                            <li><strong>Customer refuses to Accept Product:</strong> Even though you have completed the order correctly and completely, the customer still refuses the product.</li>
-                            <li><strong>Order cancellation Required:</strong> For example, the customer ordered the wrong service or the wrong quantity.</li>
-                            <li><strong>Other reasons:</strong> If the problem is not in the above categories, select "Other" and explain specifically.</li>
-                        </ul>
-                        <p><strong>4. Provide more specific and clear information so that Picpee's support team can understand the situation and best support you.</strong></p>
-                        <p><strong>5. Complete the process by submitting the form.</strong></p>
-                        <div class="important-note">
-                            <p><strong>Important Note:</strong></p>
-                            <ul>
-                                <li>You can withdraw the dispute if you and the customer can resolve it privately. To withdraw the dispute, go to the menu where you created the "dispute" and select withdraw dispute</li>
-                                <li>Your complaint will be reviewed by Picpee's admin team within 1 business day.</li>
-                                <li>The customer will receive a notification of the dispute, but will not see the reason you selected.</li>
-                                <li>Although Picpee is committed to fair review, we cannot guarantee that the dispute outcome will always be in your favor.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq11">How does a dispute affect my profile?</button>
-                    <div class="faq-content" id="faq11">
-                        <p>Although disputes are sometimes unavoidable, if they happen frequently or are not resolved satisfactorily, they can still affect your reputation on Picpee.</p>
-                        <p>If the dispute goes in the supplier's favor, you will not be required to pay a refund or pay more for that order. In some cases, Picpee will split the payment in half, refunding part to the customer and paying the rest to you, depending on the level of completion of the job.</p>
-                        <p>However, Picpee will record your dispute history on your profile. If you have multiple disputes or are repeatedly reported for poor quality work, you may:</p>
-                        <ul>
-                            <li>Have your account temporarily suspended for review,</li>
-                            <li>Be financially penalized according to the platform's policies,</li>
-                            <li>Or be permanently suspended for serious or repeated violations.</li>
-                        </ul>
-                        <h4>Some tips to avoid negative impacts:</h4>
-                        <ul>
-                            <li>Always communicate clearly with customers before and during the process.</li>
-                            <li>Read the order requirements carefully and confirm if there are any unclear points.</li>
-                            <li>Limit disputes by proactively proposing solutions instead of confrontation.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq12">How to choose photos that make you stand out from the crowd?</button>
-                    <div class="faq-content" id="faq12">
-                        <ol>
-                            <li><strong>Choose your best edited image</strong><br>
-                            Start with your strongest image as the first image in each portfolio. This is the image that will make the first impression on your clients.</li>
-                            <li><strong>Focus on the visual element</strong><br>
-                            Avoid choosing images that are too monotonous, such as empty rooms or uninteresting angles.
-                            For example, with a single exposure portfolio, an overhead shot is not suitable. Choose interior shots with a wide angle.</li>
-                            <li><strong>Diversify and specialize</strong><br>
-                            Show a variety of projects to show that you have experience working on a variety of properties.
-                            Don't just stick to one type of photo. Show off your versatility in editing techniques, especially if you offer add-ons like Virtual Staging, Day to Dusk.</li>
-                            <li><strong>Keep your photo gallery Before/After</strong><br>
-                            Upload before and after photos to help clients see your editing skills.
-                            Note: Don't include text, logos, or graphics. This can be distracting and make clients feel unprofessional.</li>
-                            <li><strong>Update your images regularly</strong><br>
-                            Continuously update your best images, to demonstrate your skills improving over time.</li>
-                            <li><strong>Make sure each photo is relevant to the service it's about</strong><br>
-                            For example, if you're building a portfolio for Virtual Staging, don't use a photo of a city skyline. Choose photos that clearly illustrate the transformation from a bare space to a furnished one.</li>
-                        </ol>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Customer FAQs Section -->
-            <section id="customer-faqs" class="faq-section">
-                <h2>Customer FAQs</h2>
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq13">Are there any fees on Picpee?</button>
-                    <div class="faq-content" id="faq13">
-                        <p>There are no additional fees for customers to use the Picpee marketplace. You only pay the fee for the service you choose.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq14">Can I message the vendor before I order?</button>
-                    <div class="faq-content" id="faq14">
-                        <p>Of course you can. All customer and supplier communication can take place directly on Picpee.</p>
-                        <img src="images/12.jpg" alt="Messaging interface with vendor" class="step-image">
-                        <p class="image-caption">Direct messaging system between customers and vendors</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq15">When will I get my edited media?</button>
-                    <div class="faq-content" id="faq15">
-                        <p>The vendor profile also lists their timeline and the project must be completed within that time.</p>
-                        <p>You will receive a notification when the vendor has submitted the final revisions to the order. The vendor is paid when you choose to accept.</p>
-                        <p>If the vendor does not deliver the project on time, you can dispute the project. Our team will review and refund the money to your e-wallet.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq16">How do I ask the vendor to complete a free test?</button>
-                    <div class="faq-content" id="faq16">
-                        <p>Picpee suppliers do not offer free trials. To test a supplier, you can place a small order of 3-5 photos to compare their style and processing time.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq17">How do I know if a vendor is available and accepting orders?</button>
-                    <div class="faq-content" id="faq17">
-                        <div class="status-indicator">
-                            <span class="status-badge on-hold">🟡 On Hold</span>
-                            <img src="images/13.jpg" alt="Messaging interface with vendor" class="step-image">
-                            <ul>
-                                <li>The vendor is reviewing each order received. The vendor has up to 12 hours (from when the order was submitted) to manually accept or decline it. The deadline for the order is set when the work is accepted.</li>
-                                <li>The project's status will show as "Submitted" until the vendor accepts (which will show "In Progress") or declines (which will show "Declined'").</li>
-                                <li>After 12 hours, any orders that have not been accepted will be automatically declined. If rejected, the funds will automatically be refunded to your e-Wallet balance.</li>
-                                <li>You will receive an email as well as in-app notification when the order is accepted or declined.</li>
-                            </ul>
-                        </div>
-                        <div class="status-indicator">
-                            <span class="status-badge not-accepting">🔴 Not Accepting</span>
-                            <img src="images/14.jpg" alt="Messaging interface with vendor" class="step-image">
-                            <ul>
-                                <li>The vendor is not accepting any more orders at this time. Check back later to see if the vendor is available or select a different vendor.</li>
-                                <li>If you're waiting on work you've already ordered from this vendor, he is still able to deliver previously accepted work or deliver revisions.</li>
-                            </ul>
-                        </div>
-                        <div class="status-indicator">
-                            <span class="status-badge auto-accepting">🟢 Auto-accepting</span>
-                            <img src="images/15.jpg" alt="Messaging interface with vendor" class="step-image">
-                            <p>For vendors who offer immediate work and show that they are online right now and accepting work immediately.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq18">How can I change a service in a project after I have ordered it?</button>
-                    <div class="faq-content" id="faq18">
-                        <p>It is inevitable that you will order the wrong number of images and choose the wrong service or add other add-ons. To change a service after ordering, you should complain to us to cancel the service and get a refund. Then you put the replacement service in your project.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq19">How do I leave a review for a vendor?</button>
-                    <div class="faq-content" id="faq19">
-                        <p>You can rate a vendor after you accept a project. This rating will be displayed on the vendor's profile and will be visible to clients.</p>
-                        <p>If you continue to work with the same provider in the future, you can change or update your previous comments.</p>
-                        <img src="images/16.jpg" alt="Review and rating interface" class="step-image">
-                        <p class="image-caption">Leave reviews and ratings for vendors after project completion</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq20">If I dispute an order, can I leave a review about the supplier?</button>
-                    <div class="faq-content" id="faq20">
-                        <p>Yes, once the Picpee admin has resolved the dispute, you will be able to leave a review.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq21">How do I save a finished video from the provider?</button>
-                    <div class="faq-content" id="faq21">
-                        <p>Once the provider finishes editing the video, they will upload the finished video to the same Google Drive or Dropbox folder you shared in the order. Once the video is uploaded, it will automatically sync to your account. This way you can access it directly or download it.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq22">Picpee refund policy</button>
-                    <div class="faq-content" id="faq22">
-                        <p>To request a refund for a service or project on Picpee, the order must first be disputed. After submitting a dispute, Picpee's support team will review within 1 day whether or not the refund is available. Once a project or service is marked as "Approved", it cannot be disputed or refunded.</p>
-                        <h4>How refunds work:</h4>
-                        <ul>
-                            <li>Refunds from disputed orders will be credited to your Picpee balance.</li>
-                            <li>This credit can be automatically applied to your future orders on the platform.</li>
-                            <li>Refunds will not be issued directly to your credit card or original payment method unless otherwise specified.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq23">Can I build a Vendor Team on Picpee?</button>
-                    <div class="faq-content" id="faq23">
-                        <p>You can't build a Vendor Team directly on Picpee. But you can create a list of favorite editors by tapping the heart icon in their profile. This way, when users create projects and add services, the providers on the list will be suggested first, making it easier for you to choose.</p>
-                        <p>If you want to remove this editor from the list, just tap the heart icon in the favorites again.</p>
-                        <img src="images/17.jpg" alt="Favorite vendors interface with heart icons" class="step-image">
-                        <p class="image-caption">Favorite vendors list with heart icon toggle</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq24">Can I tip sellers on Picpee?</button>
-                    <div class="faq-content" id="faq24">
-                        <p>We love it when you want to recognize your sellers' hard work and dedication! Currently, Picpee does not support tipping. But we will work to add this feature in the near future.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq25">What are Projects on Picpee?</button>
-                    <div class="faq-content" id="faq25">
-                        <p>Projects are a convenient way to organize multiple services under one platform. They're perfect for managing everything related to a single real estate listing or campaign.</p>
-                        <p>Think of a Project as a folder where you can:</p>
-                        <ul>
-                            <li>Group all services (editing, virtual staging, morning to night, etc.)</li>
-                            <li>Track the vendors you've hired</li>
-                            <li>Track payment status and project progress</li>
-                            <li>Easily reuse or duplicate services for similar listings in the future</li>
-                        </ul>
-                        <p>On your Projects page, you'll see an overview of all your projects in a grid or list format, including:</p>
-                        <ul>
-                            <li>Project name</li>
-                            <li>Services ordered</li>
-                            <li>Related vendors</li>
-                            <li>Total amount paid</li>
-                            <li>Status of each service</li>
-                        </ul>
-                        <p>When you open a project, you'll see:</p>
-                        <ul>
-                            <li>A summary of services, vendors, and payments</li>
-                            <li>Project-specific actions via the Actions menu (three dots), including: Rename project, copy project, create template from project, add new service and project dispute.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- General FAQs Section -->
-            <section id="general-faqs" class="faq-section">
-                <h2>General FAQs</h2>
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq26">How can I provide feedback, suggestions and ideas about Picpee?</button>
-                    <div class="faq-content" id="faq26">
-                        <p>We welcome your comments and ideas so that we can continuously improve our services and features, optimize our workflow to make it as convenient as possible for you. You can share your thoughts and ideas via the Help Center.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq27">What does the number next to a vendor's name in a review mean?</button>
-                    <div class="faq-content" id="faq27">
-                        <p>This number represents how many reviews the customer has left, not how many projects the provider has completed. This number is only updated if a customer leaves a review.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq28">What is the difference between reviews and expectation ratings?</button>
-                    <div class="faq-content" id="faq28">
-                        <ul>
-                            <li>Reviews can be seen by anyone on Picpee, while expectation ratings cannot.</li>
-                            <li>Reviews apply to all work performed by a provider, while expectation ratings apply specifically to each service ordered from a provider.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq29">How to change your account email address</button>
-                    <div class="faq-content" id="faq29">
-                        <p>Want to update the email address associated with your Picpee account? Here's how:</p>
-                        <ol>
-                            <li>Log in to your Picpee account and go to your Profile.</li>
-                            <li>In the Account Information section, enter the new email address you want to use.</li>
-                        </ol>
-                        <img src="images/18.png" alt="Account information section showing email update field" class="step-image">
-                        <p class="image-caption">Account Information section for email updates</p>
-                        <ol start="3">
-                            <li>Click Save to finish.</li>
-                        </ol>
-                        <div class="important-note">
-                            <p><strong>Note:</strong> Changing your email on Picpee does not automatically change the email you use to receive invoices from the payment gateway that processes your transactions.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq30">How do I change my password?</button>
-                    <div class="faq-content" id="faq30">
-                        <p>If you are logged in and want to change your password, go to your profile. Click on password. Here you need to re-enter your old password and new password. After completing, click "save" and you have successfully changed your password.</p>
-                        <img src="images/19.png" alt="Password change interface in profile settings" class="step-image">
-                        <p class="image-caption">Password change interface in your profile settings</p>
-                        <p>If you forget your password on the login screen, click on "forgot password". Then, you need to enter your email to receive the OTP code provided by Picpee.</p>
-                        <img src="images/20.png" alt="Forgot password screen" class="step-image">
-                        <p class="image-caption">Forgot password email input screen</p>
-                        <p>Next, you just enter the OTP code just provided and re-enter the new password.</p>
-                        <img src="images/21.jpg" alt="OTP code entry and new password setup" class="step-image">
-                        <p class="image-caption">OTP verification and new password setup</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq31">Where can I check the status of my order?</button>
-                    <div class="faq-content" id="faq31">
-                        <p>Your order status is updated and categorized in the Project section, making it easy for you to track your order.</p>
-                        <p>The statuses listed in a project are:</p>
-                        <div class="status-showcase">
-                            <div class="status-example">
-                                <img src="images/22.jpg" alt="Submitted status" class="step-image">
-                                <p><strong>Submitted:</strong> The service has been ordered from the supplier and you are waiting for the supplier to accept it.</p>
-                            </div>
-                            <div class="status-example">
-                                <img src="images/23.jpg" alt="Started status" class="step-image">
-                                <p><strong>Started:</strong> The project has been accepted by the supplier and the deadline is calculated at this time.</p>
-                            </div>
-                            <div class="status-example">
-                                <img src="images/24.jpg" alt="In review status" class="step-image">
-                                <p><strong>In review:</strong> You and the supplier are discussing to clarify the requirements and style, ensuring the project is implemented as desired.</p>
-                            </div>
-                            <div class="status-example">
-                                <img src="images/25.jpg" alt="Complained status" class="step-image">
-                                <p><strong>Complained:</strong> You have a problem with the project and have submitted a complaint for support to resolve it.</p>
-                            </div>
-                            <div class="status-example">
-                                <img src="images/26.jpg" alt="Request for revision status" class="step-image">
-                                <p><strong>Request for revision:</strong> You have requested the supplier to revise it and are waiting for completion.</p>
-                            </div>
-                            <div class="status-example">
-                                <img src="images/27.jpg" alt="Expired status" class="step-image">
-                                <p><strong>Expired:</strong> The supplier has not completed the project within the proposed deadline.</p>
-                            </div>
-                            <div class="status-example">
-                                <img src="images/28.jpg" alt="Completed status" class="step-image">
-                                <p><strong>Completed:</strong> The supplier has completed the work and you accept the project and pay the supplier.</p>
-                            </div>
-                            <div class="status-example">
-                                <img src="images/29.jpg" alt="Resolved status" class="step-image">
-                                <p><strong>Resolved:</strong> Any issues or complaints regarding the project have been resolved satisfactorily.</p>
+                                <div class="note-box">
+                                    <p><strong>NOTE:</strong> Picpee does not provide any editing work directly to editors.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="faq-item">
-                    <button class="faq-title" aria-expanded="false" aria-controls="faq32">How does Picpee make money?</button>
-                    <div class="faq-content" id="faq32">
-                        <p>Whether you are a customer or a supplier, you can use Picpee for free. Users do not need to pay to register an account or to list their services on the platform.</p>
-                        <p>Picpee operates on a revenue sharing model. Specifically:</p>
-                        <ul>
-                            <li>Customers pay the exact price listed (in USD) on the supplier's profile.</li>
-                            <li>The supplier receives 80% of the amount for each order they complete.</li>
-                            <li>Picpee retains a 20% commission to operate the platform, ensure payment security, and support customers and suppliers.</li>
-                        </ul>
-                        <h4>Picpee brings real value to users:</h4>
-                        <ul>
-                            <li><strong>Transaction protection:</strong> Picpee only pays when the customer has confirmed receipt of the order.</li>
-                            <li><strong>Secure payment:</strong> All transactions are made through Picpee's payment account, helping to ensure financial security, prevent fraud and scams.</li>
-                            <li><strong>Fair dispute resolution:</strong> Picpee can intervene in disputed orders, provide an objective assessment and refund if necessary.</li>
-                            <li><strong>Transparent costs:</strong> Customers can clearly see the revised price before placing an order and have a transaction history.</li>
-                            <li><strong>No need to ask for money:</strong> Suppliers can work with peace of mind, because Picpee guarantees timely payment after the job is approved.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </main>
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq2">How do I get paid when I complete a client project?</button>
+                            <div class="faq-content" id="faq2">
+                                <p>One of the benefits you get as a vendor on Picpee is access to receive payments via e-wallet!</p>
+                                <p>Follow the steps below to get set up to receive payments in Picpee:</p>
+                                <ol>
+                                    <li>Create your vendor account on the website.</li>
+                                    <li>Set your prices, add images to your portfolio, and complete the verification process.</li>
+                                    <li>Once your verification tests have been graded, you'll receive an email notifying you of the results of your test.</li>
+                                    <li>When you're approved to offer your services on Picpee, you'll see an option in your Picpee profile to connect to your wallet.</li>
+                                    <li>Click the option in Step 3 of your profile set up and follow the steps to connect to your wallet.</li>
+                                    <li>Enter your banking information where you'd like to receive payments.</li>
+                                </ol>
+                                <p>Payments for completed orders will not be automatically deposited into your bank account. Once the payment has posted to your Picpee account, you'll need to request a payout from your profile. (Click "Pay out funds" from the left navigation panel of your Picpee account.) This will initiate the payout to your bank account, which can take anywhere from 3-14 business days to reach your account depending on your bank's processing times.</p>
+                                <div class="note-box">
+                                    <p><strong>Important Notes:</strong></p>
+                                    <ul>
+                                        <li>The country you list on your Picpee profile must match the country of your bank account. If you selected the wrong country when creating your profile, send us an email at <a href="mailto:picpee.com@gmail.com">picpee.com@gmail.com</a> and we'll change the country for you.</li>
+                                        <li>Picpee only provides payments through e-wallet and we do not work with any other platforms.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq3">What if I can't meet the deadline?</button>
+                            <div class="faq-content" id="faq3">
+                                <p>Don't miss a deadline. Message the client as soon as you can. If the client accepts the new deadline, you can move forward with completing the work. If not, the work may be disputed, the money may be refunded to the client, and you can't take payment right away if you still choose to complete the work.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq4">How can I offer my services on Picpee?</button>
+                            <div class="faq-content" id="faq4">
+                                <ol>
+                                    <li><strong>Create a Picpee provider profile on the site</strong></li>
+                                    <img src="images/1.jpg" alt="Create Picpee provider profile interface" class="step-image">
+                                    <li><strong>Set prices and processing times for the services you want to offer.</strong></li>
+                                    <img src="images/2.jpg" alt="Price and time setting interface" class="step-image">
+                                    <li><strong>Upload examples to your portfolio for each of those services.</strong></li>
+                                    <img src="images/3.jpg" alt="Portfolio upload interface" class="step-image">
+                                    <li><strong>Click "Get Verified" confirmation. Complete the quiz provided by Picpee.</strong></li>
+                                    <img src="images/4.jpg" alt="Get Verified button" class="step-image">
+                                    <li><strong>Connect your wallet.</strong></li>
+                                    <img src="images/5.jpg" alt="Wallet connection interface" class="step-image">
+                                    <li><strong>Enable your ability to receive orders!</strong></li>
+                                    <img src="images/6.jpg" alt="Enable orders toggle" class="step-image">
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq5">How do I promote my profile on Picpee?</button>
+                            <div class="faq-content" id="faq5">
+                                <p>Here's a few ideas we recommend:</p>
+                                <ol>
+                                    <li><strong>Choose the best examples of your work for your portfolio.</strong>
+                                        <ul>
+                                            <li>Avoid using the test images you were provided during the verification process.</li>
+                                            <li>Select images that are interesting and showcase your skills.</li>
+                                            <li>Include before and after photos to show off your work.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Add a profile picture, like a headshot or your business logo.</li>
+                                    <li>Keep your profile updated.</li>
+                                    <li>Review your pricing to be competitive with other editors on the marketplace.</li>
+                                    <li>Offer a discount to the 1st 5 customers who use your services. (You can enable this setting from your Picpee profile.)</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq6">How do I become a recommended vendor?</button>
+                            <div class="faq-content" id="faq6">
+                                <p>Based on the following criteria:</p>
+                                <ul>
+                                    <li>Received many positive customer reviews.</li>
+                                    <li>Provided most or all of the services available on Picpee.</li>
+                                    <li>Provided a track record of clear and consistent communication, on-time delivery, and excellent customer service.</li>
+                                    <li>Received very few disputes or complaints.</li>
+                                    <li>Provided adheres to Picpee's policies outlined in the Terms of Service and complies with the requirements for an approved vendor profile.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq7">How much does it cost to become a Picpee vendor?</button>
+                            <div class="faq-content" id="faq7">
+                                <p>It is free for editors to sign up for an account and the service is free. However, Picpee will deduct 20% of the order value and you will receive 80% of the money back. Because Picpee is an intermediary between freelance editors and clients.</p>
+                                <p>Clients will pay in advance for each order and Picpee will hold the payment until the client approves the final revision. At that time, Picpee transfers the amount to the supplier's account, where they can transfer it to bank accounts.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq8">How do I verify a new service on Picpee?</button>
+                            <div class="faq-content" id="faq8">
+                                <p>This guide provides step-by-step details for you to complete the editor services on Picpee.</p>
+                                <p><strong>1. Log in to your editor account or create an account if you do not have a Picpee account.</strong></p>
+                                <img src="images/7.jpg" alt="Login interface" class="step-image">
+                                <p><strong>2. Select the service you want to register for. Fill in all the fields such as price, number of photos in a certain period of time, and upload your product</strong></p>
+                                <img src="images/8.jpg" alt="Service registration form" class="step-image">
+                                <p><strong>3. Click save information</strong></p>
+                                <img src="images/9.jpg" alt="Save information button" class="step-image">
+                                <p><strong>4. Move your mouse to "Get Verified" and click verify</strong></p>
+                                <img src="images/4.jpg" alt="Get Verified button" class="step-image">
+                                <p><strong>5. After clicking, you will receive a test from the system in the order section. You need to complete the test.</strong></p>
+                                <img src="images/10.jpg" alt="Verification test interface" class="step-image">
+                                <p><strong>6. After completing, you click complete and ship. The system will review your skills.</strong></p>
+                                <p><strong>7. Repeat this process for each service you register.</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq9">How to get more editing jobs on Picpee?</button>
+                            <div class="faq-content" id="faq9">
+                                <p>We want you to reach your full potential and get the jobs you want. Here are some simple yet effective ways to make your profile stand out and attract photographers looking for photo editing services:</p>
+                                <h3>1. Invest in your profile</h3>
+                                <ul>
+                                    <li><strong>Professional profile photo:</strong> Use a clear, friendly headshot or your personal logo if you're a studio.</li>
+                                    <li><strong>Short, clear bio:</strong> Describe your editing style, experience, and strengths. Avoid being too wordy, focus on what makes you different.</li>
+                                </ul>
+                                <h3>2. Build a quality portfolio</h3>
+                                <ul>
+                                    <li><strong>Post a variety of work you've done:</strong> For each service you sign up for, post a variety of work you've done so clients can evaluate your experience.</li>
+                                    <li><strong>No generic photos:</strong> Don't use real estate photos from the web or skill test photos provided by Picpee.</li>
+                                    <li><strong>No logos or graphics:</strong> Picpee requires clean gallery images with no watermarks or logos.</li>
+                                </ul>
+                                <h3>3. Create an initial offer</h3>
+                                <ul>
+                                    <li><strong>Offer a discount for the first 5 customers:</strong> This is a quick way to get your first orders and start getting reviews. You can activate this offer in the "Promotions" section.</li>
+                                </ul>
+                                <h3>4. Share your profile</h3>
+                                <ul>
+                                    <li><strong>Post your profile to community groups:</strong> Share your Picpee profile link to Facebook groups, photography forums, or your personal page.</li>
+                                    <li><strong>Be proactive:</strong> If you know a photographer who needs their photos edited, don't be afraid to send them your Picpee profile.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq10">Dispute steps for suppliers on Picpee</button>
+                            <div class="faq-content" id="faq10">
+                                <p>Before you start disputing an order, you should try to resolve the issue directly with the customer. Send a message in the order to clearly and politely discuss the difficulty you are experiencing.</p>
+                                <h3>Steps to file a dispute</h3>
+                                <p><strong>1. Access your order. Click the "Actions" button in the upper right corner of the screen.</strong></p>
+                                <img src="images/11.jpg" alt="Actions button in order interface" class="step-image">
+                                <p><strong>2. When the menu appears, select "Submit a dispute". A message will appear, read it carefully and agree to continue the process.</strong></p>
+                                <p><strong>3. Select the appropriate dispute reason:</strong></p>
+                                <p>You will see several options, for example:</p>
+                                <ul>
+                                    <li><strong>Customer assets Unable to Access:</strong> The customer did not provide sufficient access or data to complete the order.</li>
+                                    <li><strong>Customer requests Beyond Agreement:</strong> There is a request that goes beyond the scope of service or the initial cost agreed upon.</li>
+                                    <li><strong>Customer refuses to Accept Product:</strong> Even though you have completed the order correctly and completely, the customer still refuses the product.</li>
+                                    <li><strong>Order cancellation Required:</strong> For example, the customer ordered the wrong service or the wrong quantity.</li>
+                                    <li><strong>Other reasons:</strong> If the problem is not in the above categories, select "Other" and explain specifically.</li>
+                                </ul>
+                                <p><strong>4. Provide more specific and clear information so that Picpee's support team can understand the situation and best support you.</strong></p>
+                                <p><strong>5. Complete the process by submitting the form.</strong></p>
+                                <div class="note-box">
+                                    <p><strong>Important Note:</strong></p>
+                                    <ul>
+                                        <li>You can withdraw the dispute if you and the customer can resolve it privately. To withdraw the dispute, go to the menu where you created the "dispute" and select withdraw dispute</li>
+                                        <li>Your complaint will be reviewed by Picpee's admin team within 1 business day.</li>
+                                        <li>The customer will receive a notification of the dispute, but will not see the reason you selected.</li>
+                                        <li>Although Picpee is committed to fair review, we cannot guarantee that the dispute outcome will always be in your favor.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq11">How does a dispute affect my profile?</button>
+                            <div class="faq-content" id="faq11">
+                                <p>Although disputes are sometimes unavoidable, if they happen frequently or are not resolved satisfactorily, they can still affect your reputation on Picpee.</p>
+                                <p>If the dispute goes in the supplier's favor, you will not be required to pay a refund or pay more for that order. In some cases, Picpee will split the payment in half, refunding part to the customer and paying the rest to you, depending on the level of completion of the job.</p>
+                                <p>However, Picpee will record your dispute history on your profile. If you have multiple disputes or are repeatedly reported for poor quality work, you may:</p>
+                                <ul>
+                                    <li>Have your account temporarily suspended for review,</li>
+                                    <li>Be financially penalized according to the platform's policies,</li>
+                                    <li>Or be permanently suspended for serious or repeated violations.</li>
+                                </ul>
+                                <h3>Some tips to avoid negative impacts:</h3>
+                                <ul>
+                                    <li>Always communicate clearly with customers before and during the process.</li>
+                                    <li>Read the order requirements carefully and confirm if there are any unclear points.</li>
+                                    <li>Limit disputes by proactively proposing solutions instead of confrontation.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq12">How to choose photos that make you stand out from the crowd?</button>
+                            <div class="faq-content" id="faq12">
+                                <ol>
+                                    <li><strong>Choose your best edited image</strong><br>
+                                    Start with your strongest image as the first image in each portfolio. This is the image that will make the first impression on your clients.</li>
+                                    <li><strong>Focus on the visual element</strong><br>
+                                    Avoid choosing images that are too monotonous, such as empty rooms or uninteresting angles.
+                                    For example, with a single exposure portfolio, an overhead shot is not suitable. Choose interior shots with a wide angle.</li>
+                                    <li><strong>Diversify and specialize</strong><br>
+                                    Show a variety of projects to show that you have experience working on a variety of properties.
+                                    Don't just stick to one type of photo. Show off your versatility in editing techniques, especially if you offer add-ons like Virtual Staging, Day to Dusk.</li>
+                                    <li><strong>Keep your photo gallery Before/After</strong><br>
+                                    Upload before and after photos to help clients see your editing skills.
+                                    Note: Don't include text, logos, or graphics. This can be distracting and make clients feel unprofessional.</li>
+                                    <li><strong>Update your images regularly</strong><br>
+                                    Continuously update your best images, to demonstrate your skills improving over time.</li>
+                                    <li><strong>Make sure each photo is relevant to the service it's about</strong><br>
+                                    For example, if you're building a portfolio for Virtual Staging, don't use a photo of a city skyline. Choose photos that clearly illustrate the transformation from a bare space to a furnished one.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Customer FAQs Section -->
+                    <section id="customer-faqs" class="section">
+                        <h2>Customer FAQs</h2>
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq13">Are there any fees on Picpee?</button>
+                            <div class="faq-content" id="faq13">
+                                <p>There are no additional fees for customers to use the Picpee marketplace. You only pay the fee for the service you choose.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq14">Can I message the vendor before I order?</button>
+                            <div class="faq-content" id="faq14">
+                                <p>Of course you can. All customer and supplier communication can take place directly on Picpee.</p>
+                                <img src="images/12.jpg" alt="Messaging interface with vendor" class="step-image">
+                                <p class="image-caption">Direct messaging system between customers and vendors</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq15">When will I get my edited media?</button>
+                            <div class="faq-content" id="faq15">
+                                <p>The vendor profile also lists their timeline and the project must be completed within that time.</p>
+                                <p>You will receive a notification when the vendor has submitted the final revisions to the order. The vendor is paid when you choose to accept.</p>
+                                <p>If the vendor does not deliver the project on time, you can dispute the project. Our team will review and refund the money to your e-wallet.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq16">How do I ask the vendor to complete a free test?</button>
+                            <div class="faq-content" id="faq16">
+                                <p>Picpee suppliers do not offer free trials. To test a supplier, you can place a small order of 3-5 photos to compare their style and processing time.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq17">How do I know if a vendor is available and accepting orders?</button>
+                            <div class="faq-content" id="faq17">
+                                <div class="status-indicator">
+                                    <span class="status-badge on-hold">🟡 On Hold</span>
+                                    <img src="images/13.jpg" alt="Messaging interface with vendor" class="step-image">
+                                    <ul>
+                                        <li>The vendor is reviewing each order received. The vendor has up to 12 hours (from when the order was submitted) to manually accept or decline it. The deadline for the order is set when the work is accepted.</li>
+                                        <li>The project's status will show as "Submitted" until the vendor accepts (which will show "In Progress") or declines (which will show "Declined").</li>
+                                        <li>After 12 hours, any orders that have not been accepted will be automatically declined. If rejected, the funds will automatically be refunded to your e-Wallet balance.</li>
+                                        <li>You will receive an email as well as in-app notification when the order is accepted or declined.</li>
+                                    </ul>
+                                </div>
+                                <div class="status-indicator">
+                                    <span class="status-badge not-accepting">🔴 Not Accepting</span>
+                                    <img src="images/14.jpg" alt="Messaging interface with vendor" class="step-image">
+                                    <ul>
+                                        <li>The vendor is not accepting any more orders at this time. Check back later to see if the vendor is available or select a different vendor.</li>
+                                        <li>If you're waiting on work you've already ordered from this vendor, he is still able to deliver previously accepted work or deliver revisions.</li>
+                                    </ul>
+                                </div>
+                                <div class="status-indicator">
+                                    <span class="status-badge auto-accepting">🟢 Auto-accepting</span>
+                                    <img src="images/15.jpg" alt="Messaging interface with vendor" class="step-image">
+                                    <p>For vendors who offer immediate work and show that they are online right now and accepting work immediately.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq18">How can I change a service in a project after I have ordered it?</button>
+                            <div class="faq-content" id="faq18">
+                                <p>It is inevitable that you will order the wrong number of images and choose the wrong service or add other add-ons. To change a service after ordering, you should complain to us to cancel the service and get a refund. Then you put the replacement service in your project.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq19">How do I leave a review for a vendor?</button>
+                            <div class="faq-content" id="faq19">
+                                <p>You can rate a vendor after you accept a project. This rating will be displayed on the vendor's profile and will be visible to clients.</p>
+                                <p>If you continue to work with the same provider in the future, you can change or update your previous comments.</p>
+                                <img src="images/16.jpg" alt="Review and rating interface" class="step-image">
+                                <p class="image-caption">Leave reviews and ratings for vendors after project completion</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq20">If I dispute an order, can I leave a review about the supplier?</button>
+                            <div class="faq-content" id="faq20">
+                                <p>Yes, once the Picpee admin has resolved the dispute, you will be able to leave a review.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq21">How do I save a finished video from the provider?</button>
+                            <div class="faq-content" id="faq21">
+                                <p>Once the provider finishes editing the video, they will upload the finished video to the same Google Drive or Dropbox folder you shared in the order. Once the video is uploaded, it will automatically sync to your account. This way you can access it directly or download it.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq22">Picpee refund policy</button>
+                            <div class="faq-content" id="faq22">
+                                <p>To request a refund for a service or project on Picpee, the order must first be disputed. After submitting a dispute, Picpee's support team will review within 1 day whether or not the refund is available. Once a project or service is marked as "Approved", it cannot be disputed or refunded.</p>
+                                <h3>How refunds work:</h3>
+                                <ul>
+                                    <li>Refunds from disputed orders will be credited to your Picpee balance.</li>
+                                    <li>This credit can be automatically applied to your future orders on the platform.</li>
+                                    <li>Refunds will not be issued directly to your credit card or original payment method unless otherwise specified.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq23">Can I build a Vendor Team on Picpee?</button>
+                            <div class="faq-content" id="faq23">
+                                <p>You can't build a Vendor Team directly on Picpee. But you can create a list of favorite editors by tapping the heart icon in their profile. This way, when users create projects and add services, the providers on the list will be suggested first, making it easier for you to choose.</p>
+                                <p>If you want to remove this editor from the list, just tap the heart icon in the favorites again.</p>
+                                <img src="images/17.jpg" alt="Favorite vendors interface with heart icons" class="step-image">
+                                <p class="image-caption">Favorite vendors list with heart icon toggle</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq24">Can I tip sellers on Picpee?</button>
+                            <div class="faq-content" id="faq24">
+                                <p>We love it when you want to recognize your sellers' hard work and dedication! Currently, Picpee does not support tipping. But we will work to add this feature in the near future.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq25">What are Projects on Picpee?</button>
+                            <div class="faq-content" id="faq25">
+                                <p>Projects are a convenient way to organize multiple services under one platform. They're perfect for managing everything related to a single real estate listing or campaign.</p>
+                                <p>Think of a Project as a folder where you can:</p>
+                                <ul>
+                                    <li>Group all services (editing, virtual staging, morning to night, etc.)</li>
+                                    <li>Track the vendors you've hired</li>
+                                    <li>Track payment status and project progress</li>
+                                    <li>Easily reuse or duplicate services for similar listings in the future</li>
+                                </ul>
+                                <p>On your Projects page, you'll see an overview of all your projects in a grid or list format, including:</p>
+                                <ul>
+                                    <li>Project name</li>
+                                    <li>Services ordered</li>
+                                    <li>Related vendors</li>
+                                    <li>Total amount paid</li>
+                                    <li>Status of each service</li>
+                                </ul>
+                                <p>When you open a project, you'll see:</p>
+                                <ul>
+                                    <li>A summary of services, vendors, and payments</li>
+                                    <li>Project-specific actions via the Actions menu (three dots), including: Rename project, copy project, create template from project, add new service and project dispute.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- General FAQs Section -->
+                    <section id="general-faqs" class="section">
+                        <h2>General FAQs</h2>
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq26">How can I provide feedback, suggestions and ideas about Picpee?</button>
+                            <div class="faq-content" id="faq26">
+                                <p>We welcome your comments and ideas so that we can continuously improve our services and features, optimize our workflow to make it as convenient as possible for you. You can share your thoughts and ideas via the Help Center.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq27">What does the number next to a vendor's name in a review mean?</button>
+                            <div class="faq-content" id="faq27">
+                                <p>This number represents how many reviews the customer has left, not how many projects the provider has completed. This number is only updated if a customer leaves a review.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq28">What is the difference between reviews and expectation ratings?</button>
+                            <div class="faq-content" id="faq28">
+                                <ul>
+                                    <li>Reviews can be seen by anyone on Picpee, while expectation ratings cannot.</li>
+                                    <li>Reviews apply to all work performed by a provider, while expectation ratings apply specifically to each service ordered from a provider.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq29">How to change your account email address</button>
+                            <div class="faq-content" id="faq29">
+                                <p>Want to update the email address associated with your Picpee account? Here's how:</p>
+                                <ol>
+                                    <li>Log in to your Picpee account and go to your Profile.</li>
+                                    <li>In the Account Information section, enter the new email address you want to use.</li>
+                                    <img src="images/18.png" alt="Account information section showing email update field" class="step-image">
+                                    <p class="image-caption">Account Information section for email updates</p>
+                                    <li>Click Save to finish.</li>
+                                </ol>
+                                <div class="note-box">
+                                    <p><strong>Note:</strong> Changing your email on Picpee does not automatically change the email you use to receive invoices from the payment gateway that processes your transactions.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq30">How do I change my password?</button>
+                            <div class="faq-content" id="faq30">
+                                <p>If you are logged in and want to change your password, go to your profile. Click on password. Here you need to re-enter your old password and new password. After completing, click "save" and you have successfully changed your password.</p>
+                                <img src="images/19.png" alt="Password change interface in profile settings" class="step-image">
+                                <p class="image-caption">Password change interface in your profile settings</p>
+                                <p>If you forget your password on the login screen, click on "forgot password". Then, you need to enter your email to receive the OTP code provided by Picpee.</p>
+                                <img src="images/20.png" alt="Forgot password screen" class="step-image">
+                                <p class="image-caption">Forgot password email input screen</p>
+                                <p>Next, you just enter the OTP code just provided and re-enter the new password.</p>
+                                <img src="images/21.jpg" alt="OTP code entry and new password setup" class="step-image">
+                                <p class="image-caption">OTP verification and new password setup</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq31">Where can I check the status of my order?</button>
+                            <div class="faq-content" id="faq31">
+                                <p>Your order status is updated and categorized in the Project section, making it easy for you to track your order.</p>
+                                <p>The statuses listed in a project are:</p>
+                                <div class="status-showcase">
+                                    <div class="status-example">
+                                        <img src="images/22.jpg" alt="Submitted status" class="step-image">
+                                        <p><strong>Submitted:</strong> The service has been ordered from the supplier and you are waiting for the supplier to accept it.</p>
+                                    </div>
+                                    <div class="status-example">
+                                        <img src="images/23.jpg" alt="Started status" class="step-image">
+                                        <p><strong>Started:</strong> The project has been accepted by the supplier and the deadline is calculated at this time.</p>
+                                    </div>
+                                    <div class="status-example">
+                                        <img src="images/24.jpg" alt="In review status" class="step-image">
+                                        <p><strong>In review:</strong> You and the supplier are discussing to clarify the requirements and style, ensuring the project is implemented as desired.</p>
+                                    </div>
+                                    <div class="status-example">
+                                        <img src="images/25.jpg" alt="Complained status" class="step-image">
+                                        <p><strong>Complained:</strong> You have a problem with the project and have submitted a complaint for support to resolve it.</p>
+                                    </div>
+                                    <div class="status-example">
+                                        <img src="images/26.jpg" alt="Request for revision status" class="step-image">
+                                        <p><strong>Request for revision:</strong> You have requested the supplier to revise it and are waiting for completion.</p>
+                                    </div>
+                                    <div class="status-example">
+                                        <img src="images/27.jpg" alt="Expired status" class="step-image">
+                                        <p><strong>Expired:</strong> The supplier has not completed the project within the proposed deadline.</p>
+                                    </div>
+                                    <div class="status-example">
+                                        <img src="images/28.jpg" alt="Completed status" class="step-image">
+                                        <p><strong>Completed:</strong> The supplier has completed the work and you accept the project and pay the supplier.</p>
+                                    </div>
+                                    <div class="status-example">
+                                        <img src="images/29.jpg" alt="Resolved status" class="step-image">
+                                        <p><strong>Resolved:</strong> Any issues or complaints regarding the project have been resolved satisfactorily.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-title" aria-expanded="false" aria-controls="faq32">How does Picpee make money?</button>
+                            <div class="faq-content" id="faq32">
+                                <p>Whether you are a customer or a supplier, you can use Picpee for free. Users do not need to pay to register an account or to list their services on the platform.</p>
+                                <p>Picpee operates on a revenue sharing model. Specifically:</p>
+                                <ul>
+                                    <li>Customers pay the exact price listed (in USD) on the supplier's profile.</li>
+                                    <li>The supplier receives 80% of the amount for each order they complete.</li>
+                                    <li>Picpee retains a 20% commission to operate the platform, ensure payment security, and support customers and suppliers.</li>
+                                </ul>
+                                <h3>Picpee brings real value to users:</h3>
+                                <ul>
+                                    <li><strong>Transaction protection:</strong> Picpee only pays when the customer has confirmed receipt of the order.</li>
+                                    <li><strong>Secure payment:</strong> All transactions are made through Picpee's payment account, helping to ensure financial security, prevent fraud and scams.</li>
+                                    <li><strong>Fair dispute resolution:</strong> Picpee can intervene in disputed orders, provide an objective assessment and refund if necessary.</li>
+                                    <li><strong>Transparent costs:</strong> Customers can clearly see the revised price before placing an order and have a transaction history.</li>
+                                    <li><strong>No need to ask for money:</strong> Suppliers can work with peace of mind, because Picpee guarantees timely payment after the job is approved.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -600,7 +595,7 @@
             // Get floating menu elements
             const floatingMenu = document.getElementById('floatingMenu');
             const floatingMenuButton = document.getElementById('floatingMenuButton');
-            const floatingMenuDropdown = document.getElementById('float-menu');
+            const floatingMenuDropdown = document.getElementById('floatingMenuDropdown');
             let lastScrollTop = 0;
             let ticking = false;
 
@@ -653,35 +648,21 @@
                 sidebarNav.classList.toggle('show');
             });
 
-            // Smooth scrolling for sidebar and float menu links
-            const sidebarLinks = document.querySelectorAll('.sidebar-link');
-            const floatMenuLinks = document.querySelectorAll('.float-menu-link');
-            const allLinks = [...sidebarLinks, ...floatMenuLinks];
-
-            allLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
+            // Smooth scrolling and active link updates
+            const navLinks = document.querySelectorAll('.sidebar-link, .floating-menu-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
                     e.preventDefault();
-                    const targetId = this.getAttribute('href');
+                    const targetId = link.getAttribute('href');
                     const targetSection = document.querySelector(targetId);
-                    
                     if (targetSection) {
-                        targetSection.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                        
-                        // Update active link for both sidebar and float menu
-                        allLinks.forEach(l => l.classList.remove('active'));
-                        const section = this.getAttribute('data-section');
-                        document.querySelectorAll(`[data-section="${section}"]`).forEach(l => l.classList.add('active'));
-
-                        // Close sidebar and float menu on mobile after click
-                        if (window.innerWidth <= 768) {
-                            sidebarToggle.setAttribute('aria-expanded', 'false');
-                            sidebarNav.classList.remove('show');
-                            floatingMenuButton.classList.remove('active');
-                            floatingMenuDropdown.classList.remove('show');
-                        }
+                        floatingMenuButton.classList.remove('active');
+                        floatingMenuDropdown.classList.remove('show');
+                        floatingMenuButton.setAttribute('aria-expanded', 'false');
+                        sidebarToggle.setAttribute('aria-expanded', 'false');
+                        sidebarNav.classList.remove('show');
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === targetId));
                     }
                 });
             });
@@ -695,7 +676,6 @@
                     const content = document.getElementById(contentId);
                     const isExpanded = faqItem.classList.contains('expanded');
                     
-                    // Close all other FAQ items
                     faqItems.forEach(item => {
                         if (item !== faqItem) {
                             item.classList.remove('expanded');
@@ -704,7 +684,6 @@
                         }
                     });
                     
-                    // Toggle current FAQ item
                     if (isExpanded) {
                         faqItem.classList.remove('expanded');
                         this.setAttribute('aria-expanded', 'false');
@@ -724,7 +703,7 @@
                     const sectionHeight = section.offsetHeight;
                     const sectionId = section.getAttribute('id');
                     if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
-                        allLinks.forEach(link => {
+                        navLinks.forEach(link => {
                             link.classList.toggle('active', link.getAttribute('href') === `#${sectionId}`);
                         });
                     }
@@ -738,7 +717,7 @@
             });
 
             // Add animation delays to floating menu links
-            document.querySelectorAll('.float-menu-link').forEach((link, index) => {
+            document.querySelectorAll('.floating-menu-link').forEach((link, index) => {
                 link.style.setProperty('--delay', `${index * 50}ms`);
             });
 
