@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f8fafc">
+    <title>Picpee - How It Works</title>
+    <link rel="stylesheet" href="howitwork.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container-header">
+            <div class="logo">
+                <img src="logo.jpg" alt="Picpee logo" class="logo-img" />
+            </div>
+            <nav class="nav">
+                <a href="https://picpee.net/services" class="nav-link">All Services</a>
+                <a href="https://picpee.net/faq" class="nav-link">How it works</a>
+                <a href="https://picpee.net/contact" class="nav-link">Contact</a>
+                <a href="https://picpee.net/">
+                    <button class="cta-button">Find an Editor</button>
+                </a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Floating Menu -->
+    <div class="floating-menu-container" id="floatingMenu" role="navigation" aria-label="Quick navigation">
+        <button class="floating-menu-button" id="floatingMenuButton" aria-expanded="false" aria-controls="floatingMenuDropdown">
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="floating-menu-dropdown" id="floatingMenuDropdown">
+            <div class="floating-menu-header">
+                <div class="floating-menu-title">Quick Navigation</div>
+                <div class="floating-menu-subtitle">How It Works</div>
+            </div>
+            <nav class="floating-menu-nav" id="floatingMenuNav">
+                <!-- Links will be dynamically populated by JavaScript -->
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <div class="container">
+            <div class="content-layout">
+                <!-- Main Content Area -->
+                <main class="content">
+                    <div class="content-header">
+                        <h1>How It Works</h1>
+                        <p class="welcome">Using Picpee for sustainable development</p>
+                        <p>Picpee connects freelance editors with real estate agents, businesses, and photographers.</p>
+                    </div>
+
+                    <!-- Tab Navigation -->
+                    <div class="tab-nav">
+                        <button class="tab-button active" data-tab="for-customer">For Customers</button>
+                        <button class="tab-button" data-tab="for-vendor">For Vendors</button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+                        <!-- For Customers Section -->
+                        <section id="for-customer" class="section tab-panel active">
+                            <h2>Finding a professional editor has never been easier</h2>
+                            <p>Instead of wasting time sifting through hundreds of profiles on different platforms, Picpee connects you with experienced freelance editors who have been vetted and ranked by skills and services. This saves you time, improves image quality, speeds up project completion, and most importantly, helps you sell your home faster.</p>
+
+                            <h3 data-nav-id="create-project">Create a project easily, control flexibly</h3>
+                            <p>With Picpee's simple and intuitive form, you can create an order in just a few minutes. Choose the editor, the desired service, the number of photos to be edited, specify the detailed requirements and the amount to pay, everything is transparent and clear. Once the payment is made, Picpee will hold this money securely until you confirm the project is complete. During the process, you can easily send feedback or request edits if there is anything unsatisfactory. All to ensure you get the results you expect.</p>
+
+                            <h3 data-nav-id="project-tracking">Easy project tracking</h3>
+                            <p>Managing multiple orders at once can be complicated. That's why Picpee has designed a smart project flow system that helps you grasp the progress clearly and intuitively. Projects are classified into each status: Pending confirmation, In progress, and Complete, making it easy to track and operate. All exchanges, feedback, and attachments are centralized in a single workspace, ensuring seamless and efficient work throughout the process.</p>
+
+                            <h3 data-nav-id="communicate">Communicate effectively and seamlessly</h3>
+                            <p>Clear communication is key to getting projects done quickly and on time. That’s why Picpee integrates a smart chat system throughout the platform from editor profiles to specific project streams. Plus, in chat you can send files, images, and icons. You can chat, send files, and update requests instantly. Every interaction is archived for easy review when needed. With real-time notifications and a centralized workspace, collaborating with editors is seamless, transparent, and incredibly convenient.</p>
+
+                            <h3 data-nav-id="fast-payments">Fast payments with just one tap</h3>
+                            <p>At Picpee, you are always in control of your payments. When you create an order, you pay in advance and we keep it safe. We only release the money to the freelancer once you confirm the project is complete. You can also top up your Picpee account to pay for future orders faster. In case of a dispute or if you are not satisfied with the product, the Picpee team will review and issue a fair and transparent refund.</p>
+
+                            <h3 data-nav-id="community">Building a professional community</h3>
+                            <p>At Picpee, quality comes first — and your feedback is vital to maintaining and improving that standard. After each project, you can rate freelancers using our 5-star rating system, write detailed reviews, and share your own real-life experiences. Praise for dedication and professionalism is not only motivating for freelancers, but also a valuable reference for future clients. Each review you leave is a real contribution to the growing and trusted Picpee community.</p>
+                        </section>
+
+                        <!-- For Vendors Section -->
+                        <section id="for-vendor" class="section tab-panel">
+                            <h2>Become a certified freelance editor on Picpee</h2>
+                            <p>Starting your career journey is easy with Picpee. Just create a free account and register the services you want to provide. Each time you register for the service, Picpee will send you a test project to evaluate your editor skills and experience. Once your profile and services are approved, you will officially become a certified freelance editor. This way, you are ready for new opportunities and a steady income.</p>
+
+                            <h3 data-nav-id="build-profile">Build a great profile</h3>
+                            <p>Your profile is your "face" on Picpee and is an important factor in whether customers choose you or not. Invest time to present yourself in the most professional and attractive way. Customize your profile with personal photos, working hours and completed projects. Don't forget to offer competitive prices compared to other editors, and cleverly create attractive promotions for first-time customers. It's a great way to quickly build a reputation and attract orders.</p>
+
+                            <h3 data-nav-id="communicate-vendor">Communicate with clients anywhere</h3>
+                            <p>A good editor understands that the success of a project is not only about the final product, but also about how you collaborate throughout the process. That's why Picpee has created chat boxes, a powerful tool that helps you maintain a close connection with your customers from start to finish. With chat boxes, you can easily chat, share files, and get feedback all in one place. No more waiting around for email responses, just smooth and efficient collaboration, helping you work professionally and produce results that exceed expectations.</p>
+
+                            <h3 data-nav-id="get-paid">Get paid seamlessly, securely, and hassle-free</h3>
+                            <p>Once you complete a project, you'll get paid quickly and securely with Picpee. As soon as the client approves your work, we'll transfer the full project amount directly to your registered Picpee account — no delays, no middlemen. No more texting your clients to pay after every project.</p>
+
+                            <h3 data-nav-id="relationships">Building long term relationships with clients</h3>
+                            <p>Clients come back not just because of the quality of your work, but because they find long-term trust and value in you. As you work on your projects, you will gain a deeper understanding of their operations and their specific needs. This is a great opportunity to develop lasting partnerships.</p>
+
+                            <h3 data-nav-id="quality-experience">Provide a quality experience</h3>
+                            <p>Customers evaluate not only the quality of your products, but also the quality of the service provided by your editors. Editors who consistently provide great experiences will be ranked higher, appear more prominently in search results, and have more opportunities to work with you. Conversely, editors with poor reviews or constant disputes will have their recommendations reduced. Additionally, customers who value your quality of service are more likely to stick with you for the long haul.</p>
+                        </section>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get floating menu elements
+            const floatingMenu = document.getElementById('floatingMenu');
+            const floatingMenuButton = document.getElementById('floatingMenuButton');
+            const floatingMenuDropdown = document.getElementById('floatingMenuDropdown');
+            const floatingMenuNav = document.getElementById('floatingMenuNav');
+            let lastScrollTop = 0;
+            let ticking = false;
+
+            // Function to update floating menu links based on active tab
+            const updateFloatingMenuLinks = () => {
+                const activeTab = document.querySelector('.tab-button.active').getAttribute('data-tab');
+                const activeSection = document.getElementById(activeTab);
+                const headings = activeSection.querySelectorAll('h3[data-nav-id]');
+                floatingMenuNav.innerHTML = '';
+                headings.forEach((heading, index) => {
+                    const navId = heading.getAttribute('data-nav-id');
+                    const link = document.createElement('a');
+                    link.href = `#${navId}`;
+                    link.className = 'floating-menu-link';
+                    link.textContent = heading.textContent;
+                    link.style.setProperty('--delay', `${index * 50}ms`);
+                    floatingMenuNav.appendChild(link);
+                });
+
+                // Re-attach event listeners to new links
+                const navLinks = floatingMenuNav.querySelectorAll('.floating-menu-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const targetId = link.getAttribute('href').replace('#', '');
+                        const targetHeading = document.querySelector(`[data-nav-id="${targetId}"]`);
+                        if (targetHeading) {
+                            floatingMenuButton.classList.remove('active');
+                            floatingMenuDropdown.classList.remove('show');
+                            floatingMenuButton.setAttribute('aria-expanded', 'false');
+                            targetHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href').replace('#', '') === targetId));
+                        }
+                    });
+                });
+            };
+
+            // Scroll handler for floating menu visibility
+            const updateFloatingMenu = () => {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                floatingMenu.classList.toggle('visible', scrollTop > 200);
+                if (scrollTop <= 200) {
+                    floatingMenuButton.classList.remove('active');
+                    floatingMenuDropdown.classList.remove('show');
+                    floatingMenuButton.setAttribute('aria-expanded', 'false');
+                }
+                lastScrollTop = scrollTop;
+                ticking = false;
+            };
+
+            window.addEventListener('scroll', () => {
+                if (!ticking) {
+                    requestAnimationFrame(updateFloatingMenu);
+                    ticking = true;
+                }
+            });
+
+            // Toggle floating menu
+            floatingMenuButton.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const isActive = floatingMenuButton.classList.toggle('active');
+                floatingMenuDropdown.classList.toggle('show', isActive);
+                floatingMenuButton.setAttribute('aria-expanded', isActive.toString());
+            });
+
+            // Close floating menu on outside click
+            document.addEventListener('click', (e) => {
+                if (!floatingMenu.contains(e.target)) {
+                    floatingMenuButton.classList.remove('active');
+                    floatingMenuDropdown.classList.remove('show');
+                    floatingMenuButton.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Prevent floating menu dropdown from closing on click
+            floatingMenuDropdown.addEventListener('click', (e) => e.stopPropagation());
+
+            // Tab navigation
+            const tabButtons = document.querySelectorAll('.tab-button');
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const tabId = button.getAttribute('data-tab');
+                    const targetSection = document.getElementById(tabId);
+                    if (targetSection) {
+                        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+                        button.classList.add('active');
+                        document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+                        targetSection.classList.add('active');
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        updateFloatingMenuLinks(); // Update floating menu when tab changes
+                    }
+                });
+            });
+
+            // Update active link on scroll
+            const updateActiveLinksOnScroll = () => {
+                const activeTab = document.querySelector('.tab-panel.active');
+                const headings = activeTab.querySelectorAll('h3[data-nav-id]');
+                const scrollPos = window.scrollY + 150;
+                const navLinks = floatingMenuNav.querySelectorAll('.floating-menu-link');
+                headings.forEach(heading => {
+                    const headingTop = heading.offsetTop;
+                    const headingHeight = heading.offsetHeight;
+                    const headingId = heading.getAttribute('data-nav-id');
+                    if (scrollPos >= headingTop && scrollPos < headingTop + headingHeight) {
+                        navLinks.forEach(link => {
+                            link.classList.toggle('active', link.getAttribute('href').replace('#', '') === headingId);
+                        });
+                    }
+                });
+            };
+
+            let scrollTimeout;
+            window.addEventListener('scroll', () => {
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(updateActiveLinksOnScroll, 10);
+            });
+
+            // Initial setup
+            updateFloatingMenuLinks();
+            updateFloatingMenu();
+        });
+    </script>
+</body>
+</html>
