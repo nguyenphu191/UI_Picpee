@@ -126,7 +126,7 @@
 
                 <div class="value-card">
                     <div class="value-icon">
-                        <img src="icon-about-us/7.png"Connection">
+                        <img src="icon-about-us/7.png" >
                     </div>
                     <h4>Connection</h4>
                     <p>Connect freelance editors with businesses, global real estate agents, creating a collaborative ecosystem.</p>
@@ -162,7 +162,7 @@
                 
             </div>
             <div class="cta-button">
-                <a href="#" class="cta-button2">How it work</a>
+                <a href="https://picpee.com/howitwork" class="cta-button2">How it work</a>
             </div>
 
         </div>
@@ -294,21 +294,233 @@
     </div>
 </footer>
 
+    <!-- Animation Scripts -->
     <script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
-            document.querySelector('.nav').classList.toggle('active');
-            this.classList.toggle('active');
+        // Scroll Animation Script for About Us and Careers pages
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // Create Intersection Observer for scroll animations
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px 0px -100px 0px', // Trigger animation 100px before element comes into view
+                threshold: 0.1
+            };
+
+            const animationObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, observerOptions);
+
+            // Function to add animation classes and observe elements
+            function setupAnimations() {
+                
+                // Grid Images - Different animations for each section
+                const processImages = document.querySelectorAll('.process-grid .grid-image img');
+                processImages.forEach((img, index) => {
+                    img.parentElement.classList.add('animate-on-scroll', 'animate-fade-right');
+                    animationObserver.observe(img.parentElement);
+                });
+
+                const challengeImages = document.querySelectorAll('.challenge-grid .grid-image img');
+                challengeImages.forEach((img, index) => {
+                    img.parentElement.classList.add('animate-on-scroll', 'animate-fade-left');
+                    animationObserver.observe(img.parentElement);
+                });
+
+                const environmentImages = document.querySelectorAll('.environment-grid .grid-image img');
+                environmentImages.forEach((img, index) => {
+                    img.parentElement.classList.add('animate-on-scroll', 'animate-scale');
+                    animationObserver.observe(img.parentElement);
+                });
+
+                // Vision Mission Icons
+                const vmIcons = document.querySelectorAll('.vm-icon img');
+                vmIcons.forEach((icon, index) => {
+                    icon.parentElement.classList.add('animate-on-scroll', 'animate-rotate');
+                    // Add stagger delay
+                    icon.parentElement.style.animationDelay = `${index * 0.2}s`;
+                    animationObserver.observe(icon.parentElement);
+                });
+
+                // Value Cards
+                const valueCards = document.querySelectorAll('.value-card');
+                valueCards.forEach((card, index) => {
+                    card.classList.add('animate-on-scroll', 'animate-fade-up');
+                    // Add stagger delay
+                    card.style.animationDelay = `${index * 0.1}s`;
+                    animationObserver.observe(card);
+                });
+
+                // Value Icons specifically
+                const valueIcons = document.querySelectorAll('.value-icon img');
+                valueIcons.forEach((icon, index) => {
+                    icon.parentElement.classList.add('animate-on-scroll', 'animate-scale');
+                    // Add stagger delay
+                    icon.parentElement.style.animationDelay = `${index * 0.15}s`;
+                    animationObserver.observe(icon.parentElement);
+                });
+
+                // Different Section Image
+                const differentImages = document.querySelectorAll('.different-image img');
+                differentImages.forEach((img, index) => {
+                    img.parentElement.classList.add('animate-on-scroll', 'animate-fade-left');
+                    animationObserver.observe(img.parentElement);
+                });
+
+                // Impact Items
+                const impactItems = document.querySelectorAll('.impact-item');
+                impactItems.forEach((item, index) => {
+                    item.classList.add('animate-on-scroll', 'animate-fade-up');
+                    // Add stagger delay
+                    item.style.animationDelay = `${index * 0.2}s`;
+                    animationObserver.observe(item);
+                });
+
+                // Opportunity Cards (Careers page)
+                const opportunityCards = document.querySelectorAll('.opportunity-card');
+                opportunityCards.forEach((card, index) => {
+                    card.classList.add('animate-on-scroll', 'animate-fade-up');
+                    // Add stagger delay
+                    card.style.animationDelay = `${index * 0.2}s`;
+                    animationObserver.observe(card);
+                });
+
+                // CTA Buttons
+                const ctaButtons = document.querySelectorAll('.cta-button');
+                ctaButtons.forEach((button, index) => {
+                    button.classList.add('animate-on-scroll', 'animate-scale');
+                    animationObserver.observe(button);
+                });
+
+                // Social Links
+                const socialLinks = document.querySelectorAll('.social-link');
+                socialLinks.forEach((link, index) => {
+                    link.classList.add('animate-on-scroll', 'animate-fade-up');
+                    // Add stagger delay
+                    link.style.animationDelay = `${index * 0.1}s`;
+                    animationObserver.observe(link);
+                });
+            }
+
+            // Enhanced hover effects for images
+            function setupHoverEffects() {
+                // Add parallax-like effect on mouse move for large images
+                const largeImages = document.querySelectorAll('.grid-image img, .different-image img');
+                
+                largeImages.forEach(img => {
+                    img.addEventListener('mouseenter', function() {
+                        this.style.transition = 'transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+                    });
+
+                    img.addEventListener('mousemove', function(e) {
+                        if (window.innerWidth > 768) { // Only on desktop
+                            const rect = this.getBoundingClientRect();
+                            const x = e.clientX - rect.left;
+                            const y = e.clientY - rect.top;
+                            
+                            const centerX = rect.width / 2;
+                            const centerY = rect.height / 2;
+                            
+                            const deltaX = (x - centerX) / centerX;
+                            const deltaY = (y - centerY) / centerY;
+                            
+                            const rotateX = deltaY * -5; // Tilt up/down
+                            const rotateY = deltaX * 5;  // Tilt left/right
+                            
+                            this.style.transform = `
+                                perspective(1000px) 
+                                rotateX(${rotateX}deg) 
+                                rotateY(${rotateY}deg) 
+                                scale(1.05)
+                            `;
+                        }
+                    });
+
+                    img.addEventListener('mouseleave', function() {
+                        this.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)';
+                    });
+                });
+            }
+
+            // Add floating animation to value icons
+            function setupFloatingAnimation() {
+                const valueIcons = document.querySelectorAll('.value-icon img');
+                
+                valueIcons.forEach((icon, index) => {
+                    // Add random delay for floating effect
+                    const delay = Math.random() * 2;
+                    icon.style.animationDelay = `${delay}s`;
+                    
+                    // Add floating animation
+                    icon.style.animation = `float 3s ease-in-out infinite ${delay}s`;
+                });
+            }
+
+            // Smooth reveal animation for text content
+            function setupTextAnimations() {
+                const textElements = document.querySelectorAll('.grid-text, .different-text, .values-description');
+                
+                textElements.forEach((element, index) => {
+                    element.classList.add('animate-on-scroll', 'animate-fade-up');
+                    // Add delay
+                    element.style.animationDelay = `${index * 0.1}s`;
+                    animationObserver.observe(element);
+                });
+            }
+
+            // Initialize all animations
+            setupAnimations();
+            setupHoverEffects();
+            setupFloatingAnimation();
+            setupTextAnimations();
+
+            // Mobile menu toggle (existing functionality)
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const nav = document.querySelector('.nav');
+            
+            if (mobileMenuToggle && nav) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    nav.classList.toggle('active');
+                    this.classList.toggle('active');
+                });
+            }
+
+            // Different section toggles (existing functionality)
+            document.querySelectorAll('[data-toggle]').forEach(icon => {
+                icon.addEventListener('click', () => {
+                    const detail = icon.nextElementSibling.querySelector('.different-detail');
+                    if (detail) {
+                        detail.classList.toggle('hidden');
+                        icon.textContent = detail.classList.contains('hidden') ? '+' : '−';
+                        
+                        // Add smooth transition
+                        if (!detail.classList.contains('hidden')) {
+                            detail.style.animation = 'fadeInUp 0.3s ease-out';
+                        }
+                    }
+                });
+            });
+
+            // Add loading animation for images
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                if (!img.complete) {
+                    img.style.opacity = '0';
+                    img.style.transform = 'scale(0.9)';
+                    
+                    img.addEventListener('load', function() {
+                        this.style.transition = 'all 0.5s ease';
+                        this.style.opacity = '1';
+                        this.style.transform = 'scale(1)';
+                    });
+                }
+            });
+
+            console.log('🎨 Picpee animations loaded successfully!');
         });
-        document.querySelectorAll('[data-toggle]').forEach(icon => {
-        icon.addEventListener('click', () => {
-        const detail = icon.nextElementSibling.querySelector('.different-detail');
-        if (detail) {
-            detail.classList.toggle('hidden');
-            icon.textContent = detail.classList.contains('hidden') ? '+' : '−';
-        }
-        });
-    });
     </script>
 </body>
 </html>
