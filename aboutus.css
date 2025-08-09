@@ -229,29 +229,30 @@ body {
     text-align: center;
     padding: clamp(40px, 10vw, 80px) 0 var(--section-padding);
     margin-top: clamp(60px, 10vw, 70px);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: clamp(40px, 10vw, 100px);
 }
 
 .hero-subtitle {
-    font-size: clamp(18px, 4vw, 30px);
+    font-size: clamp(32px, 8vw, 56px);
     color: #49f63e;
-    margin-bottom: clamp(15px, 3vw, 20px);
-    font-weight: 1000;
+    margin-bottom: clamp(20px, 3vw, 40px);
+    font-weight: 500;
     animation: fadeInDown 1s ease-out;
 }
 
 .hero-title {
-    font-size: clamp(32px, 8vw, 56px);
-    font-weight: 1100;
+    font-size: clamp(30px, 8vw, 48px);
+    font-weight: 500;
     margin-bottom: clamp(10px, 2vw, 16px);
     line-height: 1.2;
     animation: fadeInUp 1s ease-out 0.3s both;
 }
 
 .hero-main {
-    font-size: clamp(32px, 8vw, 56px);
-    font-weight: 1100;
-    line-height: 1.3;
+    font-size: clamp(30px, 8vw, 48px);
+    font-weight: 500;
+    line-height: 1.2;
     animation: fadeInUp 1s ease-out 0.6s both;
 }
 
@@ -335,18 +336,18 @@ body {
 }
 
 .grid-title {
-    font-size: clamp(28px, 4.5vw, 48px);
+    font-size: clamp(24px, 4.5vw, 38px);
     font-weight: 500;
     color: #013927;
     letter-spacing: 1px;
 }
 
 .grid-text p {
-    font-size: clamp(18px, 3.5vw, 28px);
+    font-size: clamp(14px, 3.5vw, 24px);
     line-height: 1.2;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--text-dark);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .grid-image {
@@ -389,7 +390,8 @@ body {
 /* Vision Mission Section */
 .vision-mission {
     margin-top: var(--section-padding);
-    padding: var(--small-gap) var(--container-padding);
+    padding-top: clamp(20px, 4vw, 120px);
+    padding-bottom: clamp(20px, 4vw, 120px);
     background-color: #ebfaea;
 }
 
@@ -428,19 +430,20 @@ body {
     box-shadow: 0 10px 30px rgba(34, 197, 94, 0.3);
 }
 
-.vision h3, .mission h3 {
-    font-size: clamp(24px, 5vw, 42px);
-    font-weight: 800;
+.vision h2, .mission h2 {
+    font-size: clamp(24px, 5vw, 38px);
+    font-weight: 700;
     color: #013927;
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .vision p, .mission p {
-    font-size: clamp(16px, 3vw, 24px);
+    font-size: clamp(14px, 3.5vw, 24px);
     color: #013927;
     line-height: 1.4;
-    font-weight: 500;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 500px;
 }
 
@@ -456,7 +459,9 @@ body {
     font-weight: 500;
     color: #013927;
     letter-spacing: 1px;
-    margin-bottom: var(--small-gap);
+    padding-bottom: clamp(40px, 3vw, 120px);
+    margin-top: clamp(40px, 3vw, 100px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .values-grid {
@@ -485,8 +490,8 @@ body {
 }
 
 .value-icon img {
-    width: clamp(100px, 15vw, 180px);
-    height: clamp(100px, 15vw, 180px);
+    width: clamp(80px, 15vw, 160px);
+    height: clamp(80px, 15vw, 160px);
     object-fit: contain;
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
@@ -497,17 +502,19 @@ body {
     filter: drop-shadow(0 15px 35px rgba(34, 197, 94, 0.2));
 }
 
-.value-card h4 {
-    font-size: clamp(24px, 4.5vw, 46px);
-    font-weight: 700;
+.value-card h3 {
+    font-size: clamp(20px, 4.5vw, 38px);
+    font-weight: 600;
     color: #013927;
     margin-bottom: clamp(4px, 1vw, 6px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .value-card p {
     font-size: clamp(14px, 2.5vw, 20px);
     color: #013927;
     line-height: 1.2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .values-description {
@@ -526,8 +533,8 @@ body {
     margin: clamp(40px, 8vw, 60px) auto 0;
     background-color: #009800;
     border-radius: 12px;
-    width: clamp(220px, 50vw, 380px);
-    height: clamp(60px, 12vw, 80px);
+    width: clamp(160px, 50vw, 320px);
+    height: clamp(50px, 12vw, 70px);
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     position: relative;
     overflow: hidden;
@@ -549,8 +556,8 @@ body {
 }
 
 .cta-button2 {
-    font-size: clamp(20px, 4vw, 36px);
-    font-weight: 900;
+    font-size: clamp(14px, 4vw, 30px);
+    font-weight: 800;
     color: white;
     text-decoration: none;
     font-family: 'Arial Black', 'Arial Rounded MT Bold', sans-serif;
@@ -577,18 +584,20 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: clamp(40px, 12vw, 160px);
     align-items: center;
+    margin-top: clamp(40px, 3vw, 100px);
+    margin-bottom: clamp(40px, 3vw, 100px);
 }
 
 .different-item {
     display: flex;
     background-color: #ebfaea;
-    padding: clamp(12px, 2vw, 20px);
+    padding: clamp(2px, 2vw, 10px);
     border: 2px solid #22c55e;
     border-radius: 16px;
-    gap: clamp(10px, 2vw, 20px);
+    gap: clamp(5px, 3vw, 20px);
     min-height: fit-content;
     margin-bottom: clamp(12px, 3vw, 24px);
-    align-items: flex-start;
+    align-items: center;
     transition: all 0.3s ease;
 }
 
@@ -600,7 +609,7 @@ body {
 
 .different-icon {
     color: rgb(22, 168, 54);
-    font-size: clamp(24px, 4vw, 40px);
+    font-size: clamp(24px, 4vw, 38px);
     cursor: pointer;
     flex-shrink: 0;
     user-select: none;
@@ -608,7 +617,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: clamp(30px, 6vw, 40px);
 }
 
 .different-icon:hover {
@@ -620,13 +628,12 @@ body {
     flex: 1;
 }
 
-.different-text h4 {
-    font-size: clamp(16px, 3vw, 28px);
+.different-text h3 {
+    font-size: clamp(16px, 3vw, 24px);
     font-weight: 600;
-    margin-top: clamp(0px, 1vw, 12px);
     color: #013927;
-    margin-bottom: clamp(8px, 1vw, 12px);
-    line-height: 1.3;
+    line-height: 1.2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .different-detail p {
@@ -678,19 +685,20 @@ body {
     transform: translateY(-5px);
 }
 
-.impact-item h4 {
-    font-size: clamp(20px, 3.5vw, 28px);
+.impact-item h3 {
+    font-size: clamp(16px, 3.5vw, 24px);
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
     color: #013927;
     margin-bottom: clamp(10px, 2vw, 15px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .impact-item p {
     font-size: clamp(14px, 2.5vw, 18px);
     color: #013927;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
 /*Career*/
@@ -702,8 +710,8 @@ body {
 .opportunities-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 40px;
-    margin-top: 40px;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .opportunity-card {
@@ -724,18 +732,17 @@ body {
 }
 
 .opportunity-card h3 {
-    font-size:clamp(16px, 2vw, 28px) ;
-    font-weight: 700;
+    font-size:clamp(16px, 2vw, 24px) ;
+    font-weight: 600;
     color: #013927;
-    margin-bottom: clamp(0px, 2vw, 10px);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .opportunity-card p {
     font-size: clamp(10px, 2vw, 16px);
     line-height: 1.2;
     color: #013927;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Footer */
