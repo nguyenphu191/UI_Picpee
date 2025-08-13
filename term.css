@@ -10,8 +10,8 @@
     --spacing-sm: 0.5rem;
     --spacing-md: 1rem;
     --spacing-lg: 2rem;
-    --font-size-base: clamp(0.875rem, 2.5vw, 1rem);
-    --font-size-heading: clamp(1.5rem, 4vw, 2rem);
+    --font-size-base: clamp(12px, 3.5vw, 20px);
+    --font-size-heading: clamp(20px, 4.5vw, 32px);
 }
 
 * {
@@ -122,8 +122,7 @@ body {
 .sidebar-nav {
     display: flex;
     flex-direction: column;
-}
-
+} 
 .sidebar-link {
     display: block;
     padding: var(--spacing-sm) var(--spacing-md) var(--spacing-sm) 1.5rem;
@@ -157,7 +156,8 @@ body {
 .sidebar-section-title {
     display: block;
     padding: 0.375rem var(--spacing-md);
-    font-size: 0.75rem;
+    font-size: var(--font-size-base);
+    font-family: "Sora", Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: #9ca3af;
     text-transform: uppercase;
@@ -211,7 +211,8 @@ body {
 }
 
 .welcome {
-    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    font-size: var(--font-size-base);
+    font-family: "Sora", Arial, Helvetica, sans-serif;
     color: var(--text-dark);
     font-weight: 600;
 }
@@ -222,7 +223,8 @@ body {
 }
 
 .section h2 {
-    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-size: clamp(12px, 3.5vw, 24px);
+    font-family: "Sora", Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: var(--text-dark);
     margin-bottom: 1.5rem;
@@ -231,14 +233,16 @@ body {
 }
 
 .section h3 {
-    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+    font-size: var(--font-size-base);
+    font-family: "Sora", Arial, Helvetica, sans-serif;
     font-weight: 600;
     color: #334155;
     margin: 1.5rem 0 var(--spacing-md) 0;
 }
 
 .section h4 {
-    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-size: var(--font-size-base);
+    font-family: "Sora", Arial, Helvetica, sans-serif;
     font-weight: 600;
     color: #475569;
     margin: 1.25rem 0 var(--spacing-sm) 0;
@@ -249,17 +253,23 @@ body {
     font-size: var(--font-size-base);
     line-height: 1.7;
     color: #374151;
+    font-size: var(--font-size-base);
+    font-family: "Sora", Arial, Helvetica, sans-serif;
 }
 
 .section ul, .section ol {
     margin: var(--spacing-md) 0;
     padding-left: 1.5rem;
+    font-size: var(--font-size-base);
+    font-family: "Sora", Arial, Helvetica, sans-serif;
 }
 
 .section li {
     margin-bottom: var(--spacing-sm);
     line-height: 1.6;
     color: #374151;
+    font-size: var(--font-size-base);
+    font-family: "Sora", Arial, Helvetica, sans-serif;
 }
 
 .definition-list {

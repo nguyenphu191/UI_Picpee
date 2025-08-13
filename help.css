@@ -10,8 +10,8 @@
     --spacing-sm: 0.5rem;
     --spacing-md: 1rem;
     --spacing-lg: 2rem;
-    --font-size-base: clamp(0.875rem, 2.5vw, 1rem);
-    --font-size-heading: clamp(1.5rem, 4vw, 2rem);
+    --font-size-base: clamp(12px, 3.5vw, 20px);
+    --font-size-heading: clamp(20px, 4.5vw, 32px);
 }
 
 * {
@@ -207,7 +207,7 @@ body {
 }
 
 .welcome {
-    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    font-size: clamp(12px, 3.5vw, 20px);
     color: var(--text-dark);
     font-weight: 600;
     font-family: "Sora", Arial, Helvetica, sans-serif;
@@ -219,7 +219,7 @@ body {
 }
 
 .section h2 {
-    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-size: clamp(20px, 4.5vw, 32px);
     font-weight: 700;
     color: var(--text-dark);
     margin-bottom: 1.5rem;
@@ -229,7 +229,7 @@ body {
 }
 
 .section h3 {
-    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+    font-size: clamp(12px, 3.5vw, 20px);
     font-weight: 600;
     color: #334155;
     margin: 1.5rem 0 var(--spacing-md) 0;
@@ -269,7 +269,7 @@ body {
 }
 
 .faq-title {
-    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    font-size: clamp(12px, 3.5vw, 20px);
     font-weight: 600;
     color: var(--text-dark);
     padding: var(--spacing-md) var(--spacing-lg);
@@ -324,6 +324,7 @@ body {
     color: #475569;
     line-height: 1.7;
     font-size: var(--font-size-base);
+    font-family: "Sora", Arial, Helvetica, sans-serif;
 }
 
 .faq-content p:last-child {
@@ -344,10 +345,13 @@ body {
     margin-bottom: var(--spacing-sm);
     color: #475569;
     line-height: 1.6;
+    font-size: var(--font-size-base);
+    font-family: "Sora", Arial, Helvetica, sans-serif;
+
 }
 
 .faq-content h3 {
-    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-size: clamp(12px, 3.5vw, 20px);
     font-weight: 600;
     color: var(--text-dark);
     margin: var(--spacing-md) 0 var(--spacing-sm);
@@ -585,14 +589,14 @@ body {
 }
 
 .floating-menu-title {
-    font-size: 16px;
+    font-size: clamp(12px, 3.5vw, 20px);
     font-weight: 700;
     color: #1e293b;
     margin-bottom: 5px;
 }
 
 .floating-menu-subtitle {
-    font-size: 12px;
+    font-size: clamp(12px, 3.5vw, 20px);
     color: #64748b;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -607,7 +611,7 @@ body {
     padding: 12px 20px;
     text-decoration: none;
     color: #64748b;
-    font-size: 14px;
+    font-size: clamp(12px, 3.5vw, 20px);
     font-weight: 500;
     transition: all 0.2s ease;
     border-left: 3px solid transparent;
