@@ -9,7 +9,7 @@
     --spacing-sm: 0.5rem;
     --spacing-md: 1rem;
     --spacing-lg: 2rem;
-    --font-size-base:clamp(12px, 3.5vw, 20px);
+    --font-size-base:clamp(14px, 3.5vw, 20px);
     --font-size-heading: clamp(20px, 4.5vw, 32px);
 }
 
@@ -132,7 +132,7 @@ body {
 }
 
 .welcome {
-    font-size: clamp(12px, 3.5vw, 20px);
+    font-size: clamp(14px, 3.5vw, 20px);
     color: var(--text-dark);
     font-weight: 600;
 }
@@ -333,14 +333,14 @@ body {
 }
 
 .floating-menu-title {
-    font-size: clamp(12px, 3.5vw, 20px);
+    font-size: clamp(14px, 3.5vw, 20px);
     font-weight: 700;
     color: #1e293b;
     margin-bottom: 5px;
 }
 
 .floating-menu-subtitle {
-    font-size: clamp(12px, 3.5vw, 20px);
+    font-size: clamp(14px, 3.5vw, 20px);
     color: #64748b;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -355,7 +355,7 @@ body {
     padding: 12px 20px;
     text-decoration: none;
     color: #64748b;
-    font-size: clamp(12px, 3.5vw, 20px);
+    font-size: clamp(14px, 3.5vw, 20px);
     font-weight: 500;
     transition: all 0.2s ease;
     border-left: 3px solid transparent;

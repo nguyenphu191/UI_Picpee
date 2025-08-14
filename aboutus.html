@@ -15,7 +15,7 @@
             </div>
         <nav class="nav">
             <a href="/services" class="nav-link">Services</a>
-            <a href="/blogs" class="nav-link">Blogs</a>
+            <a href="/blogs" class="nav-link/social-links">Blogs</a>
             <a href="/how-it-works" class="nav-link">How it work</a>
             <a href="/contact" class="nav-link">Contact</a>
             <a href="/user"><button class="signup-btn">Sign Up Now</button></a>
@@ -109,7 +109,6 @@
         </div>
     </section>
 
-
     <!-- Values Section -->
     <section class="values-section">
         <div class="container">
@@ -121,7 +120,7 @@
                         <img src="icon-about-us/6.png" alt="Innovation">
                     </div>
                     <h3>Innovation</h3>
-                    <p>Always update technology and improve processes to enhance customer experience.</p>
+                    <p>Always Ascendancy update technology and improve processes to enhance customer experience.</p>
                 </div>
 
                 <div class="value-card">
@@ -167,7 +166,6 @@
 
         </div>
     </section>
-
 
     <!-- Different Section -->
     <section class="different-section">
@@ -222,7 +220,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- Impact Section -->
     <section class="impact-section">
@@ -363,13 +360,6 @@
                     animationObserver.observe(icon.parentElement);
                 });
 
-                // Different Section Image
-                const differentImages = document.querySelectorAll('.different-image img');
-                differentImages.forEach((img, index) => {
-                    img.parentElement.classList.add('animate-on-scroll', 'animate-fade-left');
-                    animationObserver.observe(img.parentElement);
-                });
-
                 // Impact Items
                 const impactItems = document.querySelectorAll('.impact-item');
                 impactItems.forEach((item, index) => {
@@ -408,7 +398,7 @@
             // Enhanced hover effects for images
             function setupHoverEffects() {
                 // Add parallax-like effect on mouse move for large images
-                const largeImages = document.querySelectorAll('.grid-image img, .different-image img');
+                const largeImages = document.querySelectorAll('.grid-image img');
                 
                 largeImages.forEach(img => {
                     img.addEventListener('mouseenter', function() {
@@ -461,7 +451,7 @@
 
             // Smooth reveal animation for text content
             function setupTextAnimations() {
-                const textElements = document.querySelectorAll('.grid-text, .different-text, .values-description');
+                const textElements = document.querySelectorAll('.grid-text, .values-description');
                 
                 textElements.forEach((element, index) => {
                     element.classList.add('animate-on-scroll', 'animate-fade-up');
@@ -495,11 +485,6 @@
                     if (detail) {
                         detail.classList.toggle('hidden');
                         icon.textContent = detail.classList.contains('hidden') ? '+' : '−';
-                        
-                        // Add smooth transition
-                        if (!detail.classList.contains('hidden')) {
-                            detail.style.animation = 'fadeInUp 0.3s ease-out';
-                        }
                     }
                 });
             });

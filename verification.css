@@ -12,7 +12,7 @@ body {
     padding: 0;
     height: 100vh;
     overflow: hidden;
-    font-size: clamp(12px, 3.5vw, 20px);
+    font-size: clamp(14px, 3.5vw, 20px);
     font-family: "Sora", Arial, Helvetica, sans-serif;
 }
 
@@ -46,7 +46,7 @@ body {
     align-items: center;
     background-color: #e8f5e8;
     padding: 20px;
-    font-size: clamp(12px, 3.5vw, 20px);
+    font-size: clamp(14px, 3.5vw, 20px);
     font-family: "Sora", Arial, Helvetica, sans-serif;
 }
 
@@ -65,7 +65,7 @@ body {
 }
 
 .verification-subtitle {
-    font-size: clamp(12px, 3.5vw, 20px);
+    font-size: clamp(14px, 3.5vw, 20px);
     font-family: "Sora", Arial, Helvetica, sans-serif;
     color: #2d5a2d;
     line-height: 1.5;
@@ -94,7 +94,7 @@ body {
 
 
 .tagline {
-    font-size: clamp(12px, 3.5vw, 20px);
+    font-size: clamp(14px, 3.5vw, 20px);
     font-family: "Sora", Arial, Helvetica, sans-serif;
     color: #2d5a2d;
     line-height: 1.4;
