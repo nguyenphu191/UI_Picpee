@@ -175,7 +175,7 @@ body {
     content: '\25BC';
     position: absolute;
     right: var(--spacing-md);
-    font-size: 0.625rem;
+    font-size: clamp(12px, 3.5vw, 20px);
     transition: transform 0.3s ease;
 }
 
@@ -451,14 +451,14 @@ a:hover {
 }
 
 .floating-menu-title {
-    font-size: 16px;
+    font-size: clamp(12px, 3.5vw, 20px);
     font-weight: 700;
     color: #1e293b;
     margin-bottom: 5px;
 }
 
 .floating-menu-subtitle {
-    font-size: 12px;
+    font-size: clamp(12px, 3.5vw, 20px);
     color: #64748b;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -466,6 +466,10 @@ a:hover {
 
 .floating-menu-nav {
     padding: 10px 0;
+}
+.floating-menu-nav a{
+    font-size: clamp(12px, 3.5vw, 20px);
+    font-family: "Sora", Arial, Helvetica, sans-serif;
 }
 
 .floating-menu-link {
@@ -501,7 +505,7 @@ a:hover {
 .floating-menu-section-title {
     display: block;
     padding: 8px 20px;
-    font-size: 12px;
+    font-size: clamp(12px, 3.5vw, 20px);
     font-weight: 700;
     color: #9ca3af;
     text-transform: uppercase;
@@ -519,7 +523,7 @@ a:hover {
     content: '\25BC';
     position: absolute;
     right: 20px;
-    font-size: 10px;
+    font-size: clamp(12px, 3.5vw, 20px);
     transition: transform 0.3s ease;
 }
 
@@ -538,7 +542,7 @@ a:hover {
 
 .floating-menu-accordion-content .floating-menu-link {
     padding-left: 30px;
-    font-size: 13px;
+    font-size: clamp(12px, 3.5vw, 20px);
 }
 
 /* Scrollbar Styles */

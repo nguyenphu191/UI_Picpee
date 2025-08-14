@@ -173,7 +173,7 @@ body {
 }
 
 .welcome {
-    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    font-size: clamp(12px, 3.5vw, 20px);
     font-family: "Sora", Arial, Helvetica, sans-serif;
     color: var(--text-dark);
     font-weight: 600;

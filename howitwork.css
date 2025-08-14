@@ -191,10 +191,10 @@ body {
 }
 
 .section h3 {
-    font-size: clamp(12px, 3.5vw, 24px);
+    font-size: clamp(16px, 3.5vw, 24px);
     font-weight: 600;
     color: #334155;
-    margin: 1.5rem 0 var(--spacing-md) 0;
+    margin: 1.2rem 0 var(--spacing-md) 0;
 }
 
 .section p {
