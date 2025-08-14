@@ -10,7 +10,7 @@
     --spacing-sm: 0.5rem;
     --spacing-md: 1rem;
     --spacing-lg: 2rem;
-    --font-size-base: clamp(12px, 3.5vw, 20px);
+    --font-size-base: clamp(14px, 3.5vw, 20px);
     --font-size-heading: clamp(20px, 4.5vw, 32px);
 }
 
@@ -175,7 +175,7 @@ body {
     content: '\25BC';
     position: absolute;
     right: var(--spacing-md);
-    font-size: clamp(12px, 3.5vw, 20px);
+    font-size: clamp(14px, 3.5vw, 20px);
     transition: transform 0.3s ease;
 }
 
@@ -223,7 +223,7 @@ body {
 }
 
 .section h2 {
-    font-size: clamp(12px, 3.5vw, 24px);
+    font-size: clamp(16px, 3.5vw, 24px);
     font-family: "Sora", Arial, Helvetica, sans-serif;
     font-weight: 700;
     color: var(--text-dark);
@@ -451,14 +451,14 @@ a:hover {
 }
 
 .floating-menu-title {
-    font-size: clamp(12px, 3.5vw, 20px);
+    font-size: clamp(14px, 3.5vw, 20px);
     font-weight: 700;
     color: #1e293b;
     margin-bottom: 5px;
 }
 
 .floating-menu-subtitle {
-    font-size: clamp(12px, 3.5vw, 20px);
+    font-size: clamp(14px, 3.5vw, 20px);
     color: #64748b;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -468,7 +468,7 @@ a:hover {
     padding: 10px 0;
 }
 .floating-menu-nav a{
-    font-size: clamp(12px, 3.5vw, 20px);
+    font-size: clamp(14px, 3.5vw, 20px);
     font-family: "Sora", Arial, Helvetica, sans-serif;
 }
 
@@ -505,7 +505,7 @@ a:hover {
 .floating-menu-section-title {
     display: block;
     padding: 8px 20px;
-    font-size: clamp(12px, 3.5vw, 20px);
+    font-size: clamp(14px, 3.5vw, 20px);
     font-weight: 700;
     color: #9ca3af;
     text-transform: uppercase;
@@ -523,7 +523,7 @@ a:hover {
     content: '\25BC';
     position: absolute;
     right: 20px;
-    font-size: clamp(12px, 3.5vw, 20px);
+    font-size: clamp(14px, 3.5vw, 20px);
     transition: transform 0.3s ease;
 }
 
@@ -542,7 +542,7 @@ a:hover {
 
 .floating-menu-accordion-content .floating-menu-link {
     padding-left: 30px;
-    font-size: clamp(12px, 3.5vw, 20px);
+    font-size: clamp(14px, 3.5vw, 20px);
 }
 
 /* Scrollbar Styles */

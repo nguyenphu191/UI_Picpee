@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-size: clamp(12px, 3.5vw, 20px);
+    font-size: clamp(14px, 3.5vw, 20px);
     font-family: "Sora", Arial, Helvetica, sans-serif;
 }
 
@@ -48,7 +48,7 @@ body {
     line-height: 1.6;
     max-width: 600px;
     margin-bottom: 20px;
-    font-size: clamp(12px, 3.5vw, 20px);
+    font-size: clamp(14px, 3.5vw, 20px);
     font-family: "Sora", Arial, Helvetica, sans-serif;
 }
 
